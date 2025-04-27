@@ -1,0 +1,250 @@
+{% extends 'base.html' %}
+
+{% block title %}{% if title %}{{title}}{% else %}{{ company}}{% endif %}  {% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section id="hero" class="hero section light-background">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+          <!--Welcome to <span>{{ company }}</span></h1> --> <h1>
+          <h1>{{ company }}<span> Preparing Our Students To Thrive</span></h1>
+          <p>At {{ company }}, we don’t just teach students — we empower future leaders, ignite purpose, and build character that lasts a lifetime.</p>
+          <div class="d-flex">
+            <a href="#about" class="btn-get-started">Get Started</a>
+            <a href="https://youtu.be/JzWbu371MuI?si=MRLR5skmAF6Yc1HY" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </section><!-- /Hero Section -->
+
+<!-- Featured Services Section -->
+<section id="featured-services" class="featured-services section">
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100" style="background-color:#2cb01d !important;">
+        <div class="service-item position-relative" style="background-color:#2cb01d !important;">
+          <div class="icon"><i class="bi bi-activity icon"></i></div>
+          <h4><a href="" class="stretched-link">Our Vision</a></h4>
+          <p>
+            To raise globally-minded, critically thinking, and compassionate individuals ready to shape tomorrow.
+          </p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200" style="background-color:#d70fb6 !important;">
+        <div class="service-item position-relative" style="background-color:#d70fb6 !important;">
+          <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
+          <h4><a href="" class="stretched-link">Global Citizenship</a></h4>
+          <p>
+            Instilling empathy, awareness, and responsibility through community engagement and global initiatives.
+          </p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300" style="background-color:#ffcd05 !important;">
+        <div class="service-item position-relative" style="background-color:#ffcd05 !important;">
+          <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+          <h4><a href="" class="stretched-link"> 
+            Innovation
+          </a></h4>
+          <p>
+            Equipping learners with digital fluency, problem-solving skills, and entrepreneurial thinking.
+          </p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400" style="background-color:#F0151F !important;">
+        <div class="service-item position-relative" style="background-color:#F0151F !important;">
+          <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+          <h4><a href="" class="stretched-link">Academic Excellence</a></h4>
+          <p>
+            Built on global standards, continuously adapted for relevance and depth.
+          </p>
+        </div>
+      </div><!-- End Service Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Featured Services Section -->
+
+<!-- About Section -->
+<section id="about" class="about section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>About</h2>
+    <p><span>Find Out More</span> <span class="description-title">About Us</span></p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-3">
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <img src="{{ url_for('static', filename='img/about.jpg') }}" alt="" class="img-fluid">
+      </div>
+
+      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="about-content ps-0 ps-lg-3">
+          <h3>Discover Exceptional Education at
+            {{ company }}
+            </h3>
+          <p class="fst-italic">
+            At {{ company }}, we understand that every learner is unique. Whether your child is just starting their educational journey or preparing for their final exams, our mission is to provide top-quality, individualized education that supports their growth, development, and future success. With expert educators and a nurturing environment, we’re here to keep your child’s potential flowing.
+
+          </p>
+          <ul>
+            <li>
+              <i class="bi bi-diagram-3"></i>
+              <div>
+                <h4>Expertly Delivered Teaching & Learning
+                </h4>
+                <p>
+                  Our qualified, passionate teachers offer a broad range of subjects and support services to meet the diverse needs of each student. From foundational literacy and numeracy in the early grades to academic excellence and career readiness in high school, we deliver focused, high-impact teaching that builds confidence and competence at every stage.
+                </p>
+              </div>
+            </li>
+            <li>
+              <i class="bi bi-fullscreen-exit"></i>
+              <div>
+                <h4>Seamless Enrollment & Support</h4>
+                <p>
+                  Getting started with {{ company }} is simple and stress-free. Our smooth admissions process, responsive staff, and clear communication ensure that your family feels supported from day one. We handle the details—so you can focus on what matters most: your child’s education.
+
+
+                </p>
+              </div>
+            </li>
+          </ul>
+          <p>
+            Whether it’s academic support, mentorship, or career guidance, we’re committed to walking the journey with every learner and parent. From school entry to graduation, we provide consistent support and a strong community focused on growth, values, and success.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /About Section -->
+
+<!-- Skills Section -->
+<section id="skills" class="skills section">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row skills-content skills-animation">
+
+      <div class="col-lg-6">
+
+        <div class="progress">
+          <span class="skill"><span>Robotics</span> <i class="val">100%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Debates</span> <i class="val">90%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Programming</span> <i class="val">75%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Visual Arts</span> <i class="val">100%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Science Fair</span> <i class="val">75%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Goal Setting & Personal Vision</span> <i class="val">75%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+      </div>
+
+      <div class="col-lg-6">
+
+        <div class="progress">
+          <span class="skill"><span>Biblical Worldview & Discernment </span> <i class="val">80%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Growth Mindset & Self-Motivation</span> <i class="val">90%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Premium Sports</span> <i class="val">55%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Mindfulness & Stress Management</span> <i class="val">55%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Decision-Making & Responsibility</span> <i class="val">55%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Ethics in a Modern World</span> <i class="val">55%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /Skills Section -->
+
+
+
+{% endblock %}
+

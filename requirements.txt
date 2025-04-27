@@ -1,0 +1,4 @@
+flask
+# gunicorn
+sparkpost
+python-decouple

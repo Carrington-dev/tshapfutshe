@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+
+{% block title %}{% if title %}{{title}}{% else %}Thrift Experiences{% endif %}{% endblock %}
+
+{% block content %}
+
+
+<!-- Faq Section -->
+<section id="faq" class="faq section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>F.A.Q</h2>
+    <p><span>Frequently Asked</span> <span class="description-title">Questions</span></p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row justify-content-center">
+
+      <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="faq-container">
+
+          <div class="faq-item faq-active">
+            <h3>Can I pay the first month’s fee on the 1st of January?</h3>
+            <div class="faq-content">
+              <p>
+                Your child’s enrolment will not be secure until we receive the application fee and the first month’s tuition. Enrolment is filled on a first-come, first-served basis.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3>What can my child have for lunch?</h3>
+            <div class="faq-content">
+              <p>
+                “<b>Why is it important for scholars to eat healthily?</b>”, you might ask.‍ Research has shown that children are able to learn better when they’re well-nourished, and eating healthy meals has been linked to higher marks, improved memory and alertness, and faster information processing. Therefore we encourage our parents to partner with us to provide our scholars with healthy food to fuel their learning.Please see the list at the top of this page for a suggested list of healthy lunches and snacks. The list is not exhaustive, so please check with your scholar’s school if you are unsure of what to pack for daily snack and lunch.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3>How old must a child be to enrol for Grade R and Grade 1?</h3>
+            <div class="faq-content">
+              <p>
+                At {{ company_title }} Grade R scholars must be turning 5 years old by 30 June of that year to be enrolled.Grade 1 scholars must be turning 6 years old by 30 June of that year to be enrolled.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3>Where can I buy the {{ company }} uniform?</h3>
+            <div class="faq-content">
+              <p>
+                The {{ company_title }}  uniform has been designed to be affordable and versatile. Many of the items can be worn outside of school as well.
+                {{ company_title }} uniforms may be purchased through the following vendors:
+
+                <br/>
+                1. {{ company_title }} Uniform Shop (located at the school) - open on Wednesdays from 08:00 to 09:00 and Fridays from 13:00 to 14:00. Please contact the school for more information.
+                <br/>
+                2. handelshuis.co.za - online shop for {{ company_title }} uniforms. Please note that the online shop is only open during certain times of the year, so please check the website for more information.
+                <br/>
+                3. {{ company_title }} has partnered with {{ company_title }} to provide our parents with a convenient way to purchase uniforms. Please see the link below for more information.
+                <br/>
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3>Do you have any aftercare or after-school enrichment opportunities?</h3>
+            <div class="faq-content">
+              <p>
+                1. Aftercare is available from dismissal until 5:30 pm five days a week (Monday-Friday) during the school terms. <br/>
+                2. Aftercare is not available during school holidays. The aftercare program is run by {{ company_title }} staff and is available to all scholars enrolled at {{ company_title }}. The aftercare program includes a light meal, homework time, and fun activities. The cost of aftercare is R500 per month.<br/>
+                3. Aftercare is billed separately from tuition and is not included in the monthly fee. Parents are required to sign up for aftercare at the beginning of each term. Please contact the school for more information. <br/>
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3>Do you offer a holiday program during term break?</h3>
+            <div class="faq-content">
+              <p>{{ company_title }} does not offer holiday care over term break or public holidays.  Please review the instructional calendar to plan care for your child accordingly.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+          <div class="faq-item">
+            <h3>How can I apply to work for {{ company_title }}?</h3>
+            <div class="faq-content">
+              <p>
+                There are many different positions available at {{ company_title }}.
+                To view these positions and to apply please visit our Join the Team page.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+          <div class="faq-item">
+            <h3>Where will {{ company_title }} open schools in future?</h3>
+            <div class="faq-content">
+              <p>Our vision at {{ company_title }} is to open new schools each year throughout South Africa. Please keep following us on our website or Facebook page for updates on where new schools will open each year. Unfortunately, {{ company_title }} is not a franchise, as schools are opened and operated centrally by our Support office.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+          <div class="faq-item">
+            <h3>How do I organise a tour of {{ company_title }}?</h3>
+            <div class="faq-content">
+              <p>If you are a prospective parent interested in viewing our model in action, we invite you to arrange directly with the school closest to you to take a tour during our school hours.
+
+                You can view our schools’ contact details on our Contact Us page.If you are an educator or external guest interested in a school tour, please e-mail our Marketing department at marketing@cvacademy.co.za.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+          
+          <div class="faq-item">
+            <h3>Does {{ company }} offer extramural activities?</h3>
+            <div class="faq-content">
+              <p>All {{ company_title }} do offer extra-mural activities. These are not included in the fees. Kindly contact your SPARK school directly to enquire about this.
+              </p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+          <div class="faq-item">
+            <h3>What is the capacity of our class sizes?</h3>
+            <div class="faq-content">
+              <p>{{ company_title }} offers a personalised learning model of education. This model ensures that each scholar receives the academic attention that they require as an individual through one-on-one and small group learning during the school day.
+
+                In our grades, we have no more than 32 scholars; however, each is receiving the academic attention they require. Read more about our Primary School Model or our High School Model.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+         
+
+        </div>
+
+      </div><!-- End Faq Column-->
+
+    </div>
+
+  </div>
+
+</section><!-- /Faq Section -->
+  
+
+{% endblock %}
+

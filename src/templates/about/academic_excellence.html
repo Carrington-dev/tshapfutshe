@@ -1,0 +1,157 @@
+{% extends 'base.html' %}
+
+{% block title %}{% if title %}{{title}}{% else %}{{ company}}{% endif %}  {% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section id="hero" class="hero section light-background">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+          <!--Welcome to <span>{{ company }}</span></h1> --> <h1>
+          <h1>Academic<span> Excellence</span></h1>
+          <p>At {{ company }}, we focus on learning that is engaging, relevant, challenging, and significant. Our pedagogical approaches push beyond traditional subject-based teaching to innovative concept-based approaches.
+          </p>
+          <div class="d-flex">
+            <a href="#about" class="btn-get-started">Get Started</a>
+            <a href="https://youtu.be/JzWbu371MuI?si=MRLR5skmAF6Yc1HY" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </section><!-- /Hero Section -->
+
+<!-- Featured Services Section -->
+<section id="featured-services" class="featured-services section">
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100" style="background-color:#2cb01d !important;">
+        <div class="service-item position-relative" style="background-color:#2cb01d !important;">
+          <div class="icon"><i class="bi bi-activity icon"></i></div>
+          <h4><a href="" class="stretched-link">Local and Global Relevance</a></h4>
+          <p>Nurturing a shared awareness and understanding of local and global  perspectives and cultures, to encourage interconnectedness and international mindedness as future changemakers.
+          </p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200" style="background-color:#d70fb6 !important;">
+        <div class="service-item position-relative" style="background-color:#d70fb6 !important;">
+          <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
+          <h4><a href="" class="stretched-link">Student Agency</a></h4>
+          <p>
+            Empowering student voice, choice  and ownership of learning by encouraging personal interests, initiatives, perseverance and adaptability, driven by ongoing reflection and individual progress.
+          </p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300" style="background-color:#ffcd05 !important;">
+        <div class="service-item position-relative" style="background-color:#ffcd05 !important;">
+          <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+          <h4><a href="" class="stretched-link"> 
+            Future-Focused Skills
+          </a></h4>
+          <p>Acquiring knowledge, conceptual understanding and essential skill sets that are collectively applied to thrive in an innovative and fast-changing world.
+          </p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400" style="background-color:#F0151F !important;">
+        <div class="service-item position-relative" style="background-color:#F0151F !important;">
+          <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+          <h4><a href="" class="stretched-link">Personalised Learning Journey
+          </a></h4>
+          <p>
+            Shaping a learning journey, in which data-driven insights guide targeted instruction, content, skills, tools, pace and mentorship discussions to support and enrich each student as a unique individual.
+
+
+          </p>
+        </div>
+      </div><!-- End Service Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Featured Services Section -->
+
+
+<!-- About Section -->
+<section id="about" class="about section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>About</h2>
+    <p><span>Find Out More</span> <span class="description-title">About Us</span></p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-3">
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <img src="{{ url_for('static', filename='img/about-1.jpg') }}" alt="" class="img-fluid">
+      </div>
+
+      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="about-content ps-0 ps-lg-3">
+          <h3>Academic Excellence Near You
+            </h3>
+          <p class="fst-italic">
+            We aspire to bring relevance, authenticity, and connection to our students’ education to help them acquire the knowledge, skills and understanding they need to succeed in today’s world. Our approach ensures learning has local and global significance for all students, in all cultures, and all places. Therefore, {{ company }} has identified four academic pillars that visualise, describe, and enhance our offering of a dynamic, personalised learning journey for each student.
+          </p>
+          <ul>
+            <li>
+              <i class="bi bi-diagram-3"></i>
+              <div>
+                <h4>
+                  At the Core of Our Educational Philosophy, We Embrace:
+                </h4>
+                <p>
+                  A dedication to blended learning through platforms like Toddle (LMS) and Microsoft Teams, ensuring engaging, interactive learning experiences both in and out of the classroom;
+                </p>
+              </div>
+            </li>
+            <li>
+              <i class="bi bi-fullscreen-exit"></i>
+              <div>
+                <h4>Elements that make our excellence</h4>
+                <p>
+                  At {{ company }}, students are encouraged to see learning as an exciting journey where they are inspired to:
+
+                  Explore open-ended questions,
+                  
+                  Experiment with diverse learning approaches,
+                  
+                  Cultivate intrinsic motivation and resilience,
+                  
+                  Define and pursue personal learning goals,
+                  
+                  Reflect meaningfully on their progress,
+                  
+                  Engage in self-assessment, and
+                  
+                  Adapt their strategies to enhance learning outcomes.                </p>
+              </div>
+            </li>
+          </ul>
+          <p>
+            We empower our students to not just adapt to change, but to lead it—equipping them with the skills and mindset to shape the future and become global innovators.
+
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /About Section -->
+
+{% endblock %}
+
