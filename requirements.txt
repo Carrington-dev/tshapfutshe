@@ -1,4 +1,4 @@
-flask
+# Django settings
 # gunicorn
-sparkpost
+django
 python-decouple
