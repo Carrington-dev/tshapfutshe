@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load i18n %}
 
 {% load static %}
 {% block title %}{% if title %}{{title}}{% else %}Thrift Experiences{% endif %}{% endblock %}
@@ -10,7 +11,7 @@
   <div class="container">
     <div class="row gy-4">
       <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-        <h1>Welcome to <span>{{ company }}</span></h1>
+        <h1>{% trans "Welcome to" %} <span>{{ company }}</span></h1>
         <p>
           At {{ company }}, we’ve spent 15 years developing and honing our approach to premium private tuition; we aren’t just a tutor company – we get involved at every step of the process, and are committed to pairing you with the perfect tutor on our team, and getting great results.
         </p>

@@ -13,6 +13,7 @@ urlpatterns = [
     path('policy/', views.policy, name='policy'),
     path('terms/', views.terms, name='terms'),
     path('faqs/', views.faqs, name='faqs'),
+    path('my_view/', views.my_view, name='my_view'),
     path('', views.index, name='home'),  # Default route to index page
 
 ]
