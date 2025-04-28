@@ -5,13 +5,14 @@ def show_data(request):
     """
     Context processor to add user data to the context.
     """
-    company = "Top Tutors"
+    company = "Tshafutshe SDA Church"
     return {
         "company": company,
         "company_title": company,
         "year": 2025,
         "phone": '+27 (0) 67 735 2242',
-        "title": 'South Africa’s Leading Tutoring Company',
+        "title": 'Muṱa wa Lutendo wa Tshafutshe',
+        "slogan": 'Muṱa wa Lutendo wa Tshafutshe',
         "description": 'Top Tutors is a leading tutoring company in South Africa, providing personalized tutoring services to students of all ages. Our experienced tutors are dedicated to helping students achieve their academic goals and reach their full potential.',
         "email": 'hello@toptutors.co.za',
         "shop_email": 'uniforms@toptutors.co.za',

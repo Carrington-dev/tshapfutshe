@@ -1,4 +1,5 @@
 from pathlib import Path
+from django.utils.translation import gettext_lazy as _
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -30,6 +31,8 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    # Added for language support
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -52,7 +55,7 @@ TEMPLATES = [
                 # Custom context processor for user data
                 'security.context_processor.show_data',
                 'django.template.context_processors.debug',
-                # 'django.template.context_processors.i18n',
+                'django.template.context_processors.i18n',
                 # 'django.template.context_processors.media',
                 # 'django.template.context_processors.static',
             ],
@@ -122,3 +125,14 @@ MEDIA_ROOT = BASE_DIR / 'media'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',  # Directory for static files
 ]   
+
+
+LANGUAGES = [
+    ('en', _('English')),
+    ('ve', _('Tshivenda')),
+    # other languages...
+]
+
+LOCALE_PATHS = [
+    BASE_DIR / 'locale',  # Where your translation files will be stored
+]
