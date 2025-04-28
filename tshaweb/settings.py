@@ -33,6 +33,7 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     # Added for language support
     'django.middleware.locale.LocaleMiddleware',
+    # 'security.middleware.ForceDefaultLanguageMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
