@@ -1,4 +1,4 @@
 # Django settings
 # gunicorn
-django
-python-decouple
+django==5.0.1
+# python-decouple
