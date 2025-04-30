@@ -67,21 +67,29 @@
           <ul>
             <li><a href="{% url 'home' %}" class="active">Home</a></li>
             <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
             
-            <li class="dropdown"><a href="{% url "services" %}"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            
+            <li class="dropdown"><a href="#"><span>Ministries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="{% url "services" %}#adv">Adventurers</a></li>
                 <li><a href="{% url "services" %}#pth">Pathfinders</a></li>
                 <li><a href="{% url "services" %}#mg">Master Guides</a></li>
-               
-              </ul>
-            </li>
-            <li class="dropdown"><a href="#"><span>Ministries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Adventurers</a></li>
-                <li><a href="#">Pathfinders</a></li>
-                <li><a href="#">Master Guides</a></li>
-               
+                <li><a href="{% url "services" %}#youth">Youth</a></li>
+                <li><a href="{% url "services" %}#sabbath">Sabbath School</a></li>
+                <li><a href="{% url "services" %}#sda">SDA Church</a></li>
+                <li><a href="{% url "services" %}#community">Community</a></li>
+                <li><a href="{% url "services" %}#health">Health</a></li>
+                <li><a href="{% url "services" %}#education">Education</a></li>
+                <li><a href="{% url "services" %}#family">Family</a></li>
+                <li><a href="{% url "services" %}#music">Music</a></li>
+                <li><a href="{% url "services" %}#children">Children</a></li>
+                <li><a href="{% url "services" %}#community">Community</a></li>
+                <li><a href="{% url "services" %}#outreach">Outreach</a></li>
+                <li><a href="{% url "services" %}#worship">Worship</a></li>
+                <li><a href="{% url "services" %}#prayer">Prayer</a></li>
+                <li><a href="{% url "services" %}#youth">Youth</a></li>
+                
               </ul>
             </li>
             <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
