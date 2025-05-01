@@ -57,6 +57,9 @@ def education(request):
 def family(request):
     return render(request, 'department/family.html')
 
+def welfare(request):
+    return render(request, 'department/welfare.html')
+
 def music(request):
     return render(request, 'department/music.html')
 
