@@ -60,6 +60,9 @@ def family(request):
 def welfare(request):
     return render(request, 'department/welfare.html')
 
+def health(request):
+    return render(request, 'department/health.html')
+
 def music(request):
     return render(request, 'department/music.html')
 
