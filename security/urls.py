@@ -16,4 +16,16 @@ urlpatterns = [
     path('my_view/', views.my_view, name='my_view'),
     path('', views.index, name='home'),  # Default route to index page
 
+    path('department/pathfinders/', views.pathfinder, name='pathfinder'),
+    path('department/adventurers/', views.adventurer, name='adventurer'),
+    path('department/youth/', views.youth, name='youth'),
+    path('department/sabbath_school/', views.sabbath_school, name='sabbath_school'),
+    path('department/personal_ministries/', views.personal_ministries, name='personal_ministries'),
+    path('department/education/', views.education, name='education'),
+    path('department/family/', views.family, name='family'),
+    path('department/welfare/', views.welfare, name='welfare'),
+    path('department/health/', views.health, name='health'),
+    path('department/prayer/', views.prayer, name='prayer'),
+    path('department/music/', views.music, name='music'),
+
 ]
