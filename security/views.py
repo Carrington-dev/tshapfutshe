@@ -63,14 +63,8 @@ def welfare(request):
 def health(request):
     return render(request, 'department/health.html')
 
+def prayer(request):
+    return render(request, 'department/prayer.html')
+
 def music(request):
     return render(request, 'department/music.html')
-
-def media(request):
-    return render(request, 'department/media.html')
-
-def welfare(request):
-    return render(request, 'department/welfare.html')
-
-def health(request):
-    return render(request, 'department/health.html')
