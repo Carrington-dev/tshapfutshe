@@ -28,4 +28,7 @@ urlpatterns = [
     path('department/prayer/', views.prayer, name='prayer'),
     path('department/music/', views.music, name='music'),
 
+    path('donate/', views.donate, name='donate'),
+    path('donations/', views.donations, name='donations'),
+
 ]
