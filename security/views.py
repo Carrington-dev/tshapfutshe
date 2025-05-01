@@ -42,20 +42,17 @@ def pathfinder(request):
 def adventurer(request):
     return render(request, 'department/adventurers.html')
 
-def sabbath_school(request):
-    return render(request, 'department/sabbath_school.html')
-
 def youth(request):
     return render(request, 'department/youth.html')
 
-def children(request):
-    return render(request, 'department/children.html')
-
-def family(request):
-    return render(request, 'department/family.html')
+def sabbath_school(request):
+    return render(request, 'department/sabbath_school.html')
 
 def personal_ministries(request):
     return render(request, 'department/personal_ministries.html')
+
+def family(request):
+    return render(request, 'department/family.html')
 
 def music(request):
     return render(request, 'department/music.html')
