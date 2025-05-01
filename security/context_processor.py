@@ -11,7 +11,7 @@ def show_data(request):
         "company_title": company,
         "year": 2025,
         "phone": '+27 (0) 67 735 2242',
-        "title": 'Muṱa wa Lutendo wa Tshafutshe',
+        "title": 'Home of Faith',
         "slogan": 'Muṱa wa Lutendo wa Tshafutshe',
         "description": 'Muṱa wa Lutendo wa Tshafutshe',
         "keywords": 'Muṱa wa Lutendo wa Tshafutshe',
