@@ -37,10 +37,10 @@ def portfolio(request):
 # Add more views as needed for departments
 
 def pathfinder(request):
-    return render(request, 'department/pathfinder.html')
+    return render(request, 'department/pathfinders.html')
 
 def adventurer(request):
-    return render(request, 'department/adventurer.html')
+    return render(request, 'department/adventurers.html')
 
 def sabbath_school(request):
     return render(request, 'department/sabbath_school.html')
