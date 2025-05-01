@@ -68,3 +68,19 @@ def prayer(request):
 
 def music(request):
     return render(request, 'department/music.html')
+
+# Add more views as needed for other donations or departments
+def donations(request):
+    return render(request, 'donations/donations.html')
+
+def donate(request):
+    return render(request, 'donations/donate.html')
+
+def paypal(request):
+    return render(request, 'donations/paypal.html')
+
+def payment_done(request):
+    return render(request, 'donations/payment_done.html')
+
+def payment_canceled(request):
+    return render(request, 'donations/payment_canceled.html')
