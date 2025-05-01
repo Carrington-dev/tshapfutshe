@@ -51,11 +51,11 @@ def youth(request):
 def children(request):
     return render(request, 'department/children.html')
 
-def church(request):
-    return render(request, 'department/church.html')
+def family(request):
+    return render(request, 'department/family.html')
 
-def admin(request):
-    return render(request, 'department/admin.html')
+def personal_ministries(request):
+    return render(request, 'department/personal_ministries.html')
 
 def music(request):
     return render(request, 'department/music.html')
