@@ -51,6 +51,9 @@ def sabbath_school(request):
 def personal_ministries(request):
     return render(request, 'department/personal_ministries.html')
 
+def education(request):
+    return render(request, 'department/education.html')
+
 def family(request):
     return render(request, 'department/family.html')
 
