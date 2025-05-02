@@ -11,6 +11,7 @@ class OrderForm3(ModelForm):
             'last_name',
             'country',
             'phone',
+            'order_total',
             'payment_method',
             'state',
             'city',
