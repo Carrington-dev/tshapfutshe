@@ -26,6 +26,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'security',  # Custom security app
 ]
 
 MIDDLEWARE = [
@@ -141,3 +143,6 @@ LANGUAGES = [
 LOCALE_PATHS = [
     BASE_DIR / 'locale',
 ]
+
+AUTH_USER_MODEL = 'security.User'  # Custom user model
+LOGIN_URL = '/login/'  # Redirect to login page if not authenticated
