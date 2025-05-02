@@ -108,8 +108,6 @@ def donate(request):
             pass
 
     context['form'] = form
-    print("Form is valid:", form.is_valid())
-    print("Form errors:", form.errors)
     return render(request, 'donations/donate.html', context)
 
 def paypal(request, pk):
