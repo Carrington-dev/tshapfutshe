@@ -86,6 +86,7 @@ def donate(request):
     form = OrderForm()
     if request.method == 'POST':
         form = OrderForm(request.POST)
+        print("Form data is valid:", form.is_valid())  # Debugging line to check form data
         if form.is_valid():
             order = form.save()
             # order.order_number = str(order.pk)[-12:-1]
@@ -105,7 +106,8 @@ def donate(request):
             # return redirect('home')  # 'home' is the name of a URL pattern
 
         else:
-            pass
+            print("Form is not valid")
+            messages.error(request, _('There was an error with your submission. Please try again.'))
 
     context['form'] = form
     return render(request, 'donations/donate.html', context)
