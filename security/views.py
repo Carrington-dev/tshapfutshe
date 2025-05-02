@@ -1,11 +1,13 @@
-from django.http import HttpResponse
-from django.shortcuts import redirect, render
+from django.http import HttpResponse, JsonResponse
+from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from django.utils import translation
 from django.utils.translation import gettext_lazy as _
 from django.contrib import messages
 
 from security.forms import OrderForm3
+from security.models import Order
+from security.pay_utils import get_data_validate
 
 def my_view(request):
     output = _("Welcome to ") + "Tshapfutshe SDA Church!"
@@ -106,13 +108,22 @@ def donate(request):
             pass
 
     context['form'] = form
+    print("Form is valid:", form.is_valid())
+    print("Form errors:", form.errors)
     return render(request, 'donations/donate.html', context)
 
 def paypal(request, pk):
-    return render(request, 'donations/paypal.html')
+    order = get_object_or_404(Order, pk=pk)
+    context = dict()
+    context['htmlForm'] = get_data_validate(request, order.order_number, order.order_total, order.pk)
+    context['order'] = order
+    return render(request, 'donations/paypal.html', context)
 
-def payment_done(request):
+def payment_done(request, pk):
     return render(request, 'donations/payment_done.html')
 
-def payment_canceled(request):
+def payment_canceled(request, pk):
     return render(request, 'donations/payment_canceled.html')
+
+def before(request, pk):
+    return JsonResponse({'status': 'ok', 'message': 'Payment is being processed.'})

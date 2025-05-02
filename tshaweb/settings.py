@@ -1,3 +1,4 @@
+from decouple import config
 from pathlib import Path
 from django.utils.translation import gettext_lazy as _
 
@@ -146,3 +147,10 @@ LOCALE_PATHS = [
 
 AUTH_USER_MODEL = 'security.User'  # Custom user model
 LOGIN_URL = '/login/'  # Redirect to login page if not authenticated
+
+GRAPPELLI_ADMIN_TITLE = "Stemgon Inc"
+
+PAYFAST_MERCHANT_KEY = config("PAYFAST_MERCHANT_KEY")
+PAYFAST_MERCHANT_ID = config("PAYFAST_MERCHANT_ID")
+PAYFAST_SANDBOX_MERCHANT_ID = config("PAYFAST_SANDBOX_MERCHANT_ID")
+PAYFAST_SANDBOX_MERCHANT_KEY = config("PAYFAST_SANDBOX_MERCHANT_KEY")

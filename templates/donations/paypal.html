@@ -32,7 +32,8 @@
               <li class="na">Issuing Fee</li>
             </ul>
             <div class="btn-wrap">
-              <a href="#" class="btn-buy">Pay Now</a>
+              {{ htmlForm | safe }}
+              {% comment %} <a href="#" class="btn-buy">Pay Now</a> {% endcomment %}
             </div>
           </div>
         </div>
