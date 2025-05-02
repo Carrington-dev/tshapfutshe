@@ -1,7 +1,11 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import redirect, render
+from django.urls import reverse
 from django.utils import translation
 from django.utils.translation import gettext_lazy as _
+from django.contrib import messages
+
+from security.forms import OrderForm3
 
 def my_view(request):
     output = _("Welcome to ") + "Tshapfutshe SDA Church!"
@@ -71,12 +75,38 @@ def music(request):
 
 # Add more views as needed for other donations or departments
 def donations(request):
-    return render(request, 'donations/donations.html')
+    context = dict()
+    return render(request, 'donations/donations.html', context)
 
 def donate(request):
-    return render(request, 'donations/donate.html')
+    context = dict()
+    # Handle the donation form submission here if needed
+    form = OrderForm3()
+    if request.method == 'POST':
+        form = OrderForm3(request.POST)
+        if form.is_valid():
+            order = form.save()
+            # order.order_number = str(order.pk)[-12:-1]
+            order.save()
+            messages.success(request, f'Thank you {order.first_name} {order.last_name}, your order number is {order.order_number}. Please proceed to pay.')
+            # url = f"{request.scheme}://{request.META['HTTP_HOST']}{str(reverse(order.payment_method.lower().strip(), args=[order.pk]))}"
+            # order_started_html.delay(url, order.pk)
+            # order_started.delay(url, order.pk)
+            
+            order.status = 'Pending'
+            order.currency = 'USD'
+            order.save()
+            if order.payment_method != None:
+                if order.payment_method != '':
+                    return redirect(reverse(order.payment_method.lower().strip(), args=[order.pk]))
+            return redirect('home')
+        else:
+            pass
 
-def paypal(request):
+    context['form'] = form
+    return render(request, 'donations/donate.html', context)
+
+def paypal(request, pk):
     return render(request, 'donations/paypal.html')
 
 def payment_done(request):

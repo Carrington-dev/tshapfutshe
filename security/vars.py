@@ -1,10 +1,10 @@
 payment_method = [
-    # ("PayPal","PayPal"),
-    ("PayFast","PayFast"),
+    ("PayPal","PayPal"),
+    # ("PayFast","PayFast"),
     # ("PayPal","PayPal"),
     # ("Ozow","Ozow"),
     # ("Yoco","Yoco"),
-    ("EFT","EFT"),
+    # ("EFT","EFT"),
 ]
 
 LABELS = (

@@ -30,5 +30,6 @@ urlpatterns = [
 
     path('donate/', views.donate, name='donate'),
     path('donations/', views.donations, name='donations'),
+    path('paypal/<str:pk>', views.paypal, name='paypal'),
 
 ]

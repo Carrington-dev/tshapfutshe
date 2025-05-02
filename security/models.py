@@ -87,10 +87,10 @@ class Order(models.Model):
     phone                   = models.CharField(max_length=50, default="")
     order_total             = models.DecimalField(max_digits=10, decimal_places=2, default=3)
     device_name             = models.CharField(max_length=700, null=True, blank=True)
-    currency                = models.CharField(max_length=40, default="ZAR")
+    currency                = models.CharField(max_length=40, default="USD")
     ip_adress               = models.CharField(max_length=40, default="0.0.0.1")
-    order_type          = models.CharField(max_length=300, choices=ORDER_TYPE, default="Reciept")
-    payment_method          = models.CharField(max_length=300, choices=payment_method, default="PayFast")
+    order_type              = models.CharField(max_length=300, choices=ORDER_TYPE, default="Reciept")
+    payment_method          = models.CharField(max_length=300, choices=payment_method, default="PayPal")
     city                    = models.CharField(max_length=200, blank=True, null=True)
     street_name             = models.CharField(max_length=400, blank=True, null=True)
     zip_code                = models.CharField(max_length=200, blank=True, null=True)
@@ -110,4 +110,5 @@ class Order(models.Model):
     
     def save(self, *args, **kwargs):
         super(Order, self).save(*args, **kwargs)
+        
     
