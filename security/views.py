@@ -5,7 +5,7 @@ from django.utils import translation
 from django.utils.translation import gettext_lazy as _
 from django.contrib import messages
 
-from security.forms import OrderForm3
+from security.forms import OrderForm
 from security.models import Order
 from security.pay_utils import get_data_validate
 
@@ -83,9 +83,9 @@ def donations(request):
 def donate(request):
     context = dict()
     # Handle the donation form submission here if needed
-    form = OrderForm3()
+    form = OrderForm()
     if request.method == 'POST':
-        form = OrderForm3(request.POST)
+        form = OrderForm(request.POST)
         if form.is_valid():
             order = form.save()
             # order.order_number = str(order.pk)[-12:-1]

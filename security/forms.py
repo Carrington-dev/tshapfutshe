@@ -1,7 +1,7 @@
 from django.forms import ModelForm
 from security.models import Order
 
-class OrderForm3(ModelForm):
+class OrderForm(ModelForm):
     class Meta:
         model = Order
         # fields = [ "payment_method"]
