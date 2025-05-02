@@ -10,7 +10,6 @@ class OrderForm3(ModelForm):
             'first_name',
             'last_name',
             'country',
-            # 'type_of_class',
             'phone',
             'payment_method',
             'state',
