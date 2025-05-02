@@ -96,10 +96,10 @@ def donate(request):
             order.status = 'Pending'
             order.currency = 'USD'
             order.save()
-            if order.payment_method != None:
-                if order.payment_method != '':
-                    return redirect(reverse(order.payment_method.lower().strip(), args=[order.pk]))
-            return redirect('home')
+            
+            return redirect(reverse('paypal', args=[order.pk]))
+            # return redirect('home')  # 'home' is the name of a URL pattern
+
         else:
             pass
 
