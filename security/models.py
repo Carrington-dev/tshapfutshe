@@ -2,6 +2,17 @@ import uuid
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
+
+import uuid
+from .utils import order_num_gen
+from .vars import *
+from .fields import OrderField
+from tshaweb import settings
+
+# Create your models here.
+
+
+
 from security.managers import UserManager
 
 class User(AbstractUser):
@@ -30,3 +41,160 @@ class User(AbstractUser):
     
     class Meta:
         ordering = [ "email", "username" ]
+
+
+
+class Payment(models.Model):
+    id = models.UUIDField( 
+         primary_key = True, 
+         default = uuid.uuid4, 
+         editable = False) 
+
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, blank=True, null=True)
+    payment_id = models.CharField(max_length=100)
+    payment_method = models.CharField(max_length=100, choices=PAYMENT_METHOD, default="CC" )
+    card_number = models.CharField(max_length=200, null=True, blank=True)
+    
+    amount_paid = models.CharField(max_length=100)
+    status = models.CharField(max_length=100)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+
+
+    def __str__(self):
+        return self.payment_id
+
+    class Meta:
+        verbose_name = 'Payment'
+        verbose_name_plural = 'Payments'
+
+class Product(models.Model):
+    """Model definition for Product."""
+    id = models.UUIDField( 
+         primary_key = True, 
+         default = uuid.uuid4, 
+         editable = False) 
+
+    product = models.ForeignKey('self', related_name='products', on_delete=models.SET_NULL, blank=True, null=True)
+    
+    """Order field for the product."""
+    order = OrderField(blank=True, for_fields=['product'])
+
+    name = models.CharField(max_length=250, unique=True)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    hours = models.IntegerField( choices=[(i,i) for i in range(160)])
+    per = models.CharField(max_length=250, default="hour")
+    # product_type = models.CharField(max_length=300, choices=p_cs)
+    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='draft')
+    label = models.CharField(max_length=10, choices=LABELS, default='Free')
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
+    is_advanced = models.BooleanField(default=False)
+
+    def __str__(self) -> str:
+        return self.name
+    
+
+    class Meta:
+        verbose_name = 'Service'
+        verbose_name_plural = 'Services'
+        ordering = ['order']
+    
+class OrderProduct(models.Model):
+    id = models.UUIDField( 
+         primary_key = True, 
+         default = uuid.uuid4, 
+         editable = False) 
+
+    order = models.ForeignKey("Order", related_name='order_items', on_delete=models.CASCADE, blank=True, null=True)
+    payment = models.ForeignKey(Payment, on_delete=models.SET_NULL, blank=True, null=True)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE,  related_name='order_items', blank=True, null=True)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, blank=True, null=True)
+    # variations = models.ManyToManyField(Variations, blank=True)
+    quantity = models.IntegerField()
+    is_ordered = models.BooleanField(default=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return str(f"{self.product.name}")
+
+    class Meta:
+        db_table = 'order_product'
+        managed = True
+        verbose_name = 'Item'
+        verbose_name_plural = 'Items'
+    
+
+    @property
+    def get_sub_total(self):
+        
+        return (self.product.price) *  (self.quantity )
+
+    @property
+    def get_hours(self):
+        return (self.product.hours) if not None else 0
+    
+
+
+    
+
+class Order(models.Model):
+    id = models.UUIDField( 
+         primary_key = True, 
+         default = uuid.uuid4, 
+         editable = False) 
+
+    user                    = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, blank=True, null=True)
+    payment                 = models.ForeignKey(Payment, on_delete=models.SET_NULL, null=True, blank=True)
+    email                   = models.EmailField(max_length=200, blank=False)
+    first_name              = models.CharField(max_length=200, blank=False)
+    last_name               = models.CharField(max_length=200, blank=False)
+    country                 = models.CharField(max_length=600,  default='South Africa')
+    state                   = models.CharField(max_length=600,  default='Gauteng')
+    short_description       = models.TextField(default='Gauteng')
+    # country                 = models.CharField(max_length=400, choices=countries, default='ZA')
+    type_of_class           = models.CharField(max_length=300, blank=True, null=True)
+    phone                   = models.CharField(max_length=50, default="")
+    order_total             = models.DecimalField(max_digits=10, decimal_places=2, default=3)
+    order_total_other       = models.DecimalField(max_digits=10, decimal_places=2, default=3)
+    device_name             = models.CharField(max_length=700, null=True, blank=True)
+    currency                = models.CharField(max_length=40, default="ZAR")
+    ip_adress               = models.CharField(max_length=40, default="0.0.0.1")
+    order_type          = models.CharField(max_length=300, choices=ORDER_TYPE, default="Reciept")
+    payment_method          = models.CharField(max_length=300, choices=payment_method, default="PayFast")
+    # learning_method         = models.CharField(max_length=300, choices=PREFFERED_METHOD, blank=True, null=True)
+    city                    = models.CharField(max_length=200, blank=True, null=True)
+    street_name             = models.CharField(max_length=400, blank=True, null=True)
+    zip_code                = models.CharField(max_length=200, blank=True, null=True)
+    status                  = models.CharField(max_length=100, choices=STATUS, default="Started")
+    delivery_status         = models.CharField(max_length=100, choices=D_STATUS, default="Scheduled")
+    # order_number            = models.CharField(max_length=300, blank=False, unique=False, default=order_num_gen)
+    order_number            = models.CharField(max_length=300, blank=False, unique=False, default=order_num_gen)
+    date_ordered			= models.DateTimeField(verbose_name='date orderd', auto_now_add=True)
+    last_viewed	            = models.DateTimeField(verbose_name='last viewed', auto_now=True)
+    is_ordered              = models.BooleanField(default=False)
+
+    class Meta:
+        verbose_name = 'Order'
+        verbose_name_plural = 'Orders'
+
+    def __str__(self):
+        return self.first_name + " " + self.last_name
+    
+    def save(self, *args, **kwargs):
+        super(Order, self).save(*args, **kwargs)
+    
+    def get_order_total(self):
+        total = 0
+        for p in self.order_items.all():
+            total += p.get_sub_total
+        return total
+    
+    @property
+    def get_rand_total(self):
+        total = 0
+        for p in self.order_items.all():
+            total += p.get_sub_total
+        return total
+    
