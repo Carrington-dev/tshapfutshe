@@ -1,65 +1,88 @@
 {% extends 'base.html' %}
 
+{% load i18n %}
 {% block title %}{% if title %}{{title}}{% else %}Thrift Experiences{% endif %}{% endblock %}
 
 {% block content %}
-  <!-- Contact Section -->
-  <section id="contact" class="contact section">
 
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <h2>Contact</h2>
-      <p><span>Need Help?</span> <span class="description-title">Contact Us</span></p>
-    </div><!-- End Section Title -->
+<!-- Hero Section -->
+<section id="hero" class="hero section light-background">
 
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-      <div class="row gy-4">
-
-        <div class="col-lg-2"></div>
-
-        <div class="col-lg-8">
-          <form action="/send-email" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-            <div class="row gy-4">
-
-              <div class="col-md-6">
-                <label for="name-field" class="pb-2">Your Name</label>
-                <input type="text" name="name" id="name-field" class="form-control" required="">
-              </div>
-
-              <div class="col-md-6">
-                <label for="email-field" class="pb-2">Your Email</label>
-                <input type="email" class="form-control" name="email" id="email-field" required="">
-              </div>
-
-              <div class="col-md-12">
-                <label for="subject-field" class="pb-2">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject-field" required="">
-              </div>
-
-              <div class="col-md-12">
-                <label for="message-field" class="pb-2">Message</label>
-                <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-              </div>
-
-              <div class="col-md-12 text-center">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                <button type="submit">Send Message</button>
-              </div>
-
+    <div class="container">
+        <div class="row gy-4">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <h1>{% trans "Our" %} <span>Beliefs</span></h1>
+            <p>
+            Seventh-day Adventist beliefs are meant to permeate your whole life. Growing out of scriptures that paint a compelling portrait of God, you are invited to explore, experience and know the One who desires to make us whole.
+            </p>
+            <div class="d-flex">
+            <a href="#about" class="btn-get-started">Get Started</a>
+            <a href="https://youtu.be/JzWbu371MuI?si=MRLR5skmAF6Yc1HY" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
             </div>
-          </form>
-        </div><!-- End Contact Form -->
+        </div>
+        </div>
+    </div>
 
-        <div class="col-lg-2"></div>
+</section><!-- /Hero Section -->
+  
 
-      </div>
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+
+<!-- Section Title -->
+<div class="container section-title" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p><span>Need Help?</span> <span class="description-title">Contact Us</span></p>
+</div><!-- End Section Title -->
+
+<div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+    <div class="col-lg-2"></div>
+
+    <div class="col-lg-8">
+        <form action="/send-email" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+        <div class="row gy-4">
+
+            <div class="col-md-6">
+            <label for="name-field" class="pb-2">Your Name</label>
+            <input type="text" name="name" id="name-field" class="form-control" required="">
+            </div>
+
+            <div class="col-md-6">
+            <label for="email-field" class="pb-2">Your Email</label>
+            <input type="email" class="form-control" name="email" id="email-field" required="">
+            </div>
+
+            <div class="col-md-12">
+            <label for="subject-field" class="pb-2">Subject</label>
+            <input type="text" class="form-control" name="subject" id="subject-field" required="">
+            </div>
+
+            <div class="col-md-12">
+            <label for="message-field" class="pb-2">Message</label>
+            <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+
+            <button type="submit">Send Message</button>
+            </div>
+
+        </div>
+        </form>
+    </div><!-- End Contact Form -->
+
+    <div class="col-lg-2"></div>
 
     </div>
 
-  </section><!-- /Contact Section -->
+</div>
+
+</section><!-- /Contact Section -->
 {% endblock %}
 
