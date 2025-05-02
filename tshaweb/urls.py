@@ -8,9 +8,9 @@ from django.conf.urls.i18n import i18n_patterns
 # from tshaweb import settings
 
 # urlpatterns = [
-#     path('i18n/', include('django.conf.urls.i18n')),  # URL for language switching
-#     # path('admin/', admin.site.urls),
-#     # path('', include('security.urls')),  # Include the security app URLs
+#     # path('i18n/', include('django.conf.urls.i18n')),  # URL for language switching
+#     path('admin/', admin.site.urls),
+#     path('', include('security.urls')),  # Include the security app URLs
 # ]
 
 urlpatterns = [
