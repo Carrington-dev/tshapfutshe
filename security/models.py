@@ -68,76 +68,6 @@ class Payment(models.Model):
         verbose_name = 'Payment'
         verbose_name_plural = 'Payments'
 
-class Product(models.Model):
-    """Model definition for Product."""
-    id = models.UUIDField( 
-         primary_key = True, 
-         default = uuid.uuid4, 
-         editable = False) 
-
-    product = models.ForeignKey('self', related_name='products', on_delete=models.SET_NULL, blank=True, null=True)
-    
-    """Order field for the product."""
-    order = OrderField(blank=True, for_fields=['product'])
-
-    name = models.CharField(max_length=250, unique=True)
-    price = models.DecimalField(max_digits=10, decimal_places=2)
-    hours = models.IntegerField( choices=[(i,i) for i in range(160)])
-    per = models.CharField(max_length=250, default="hour")
-    # product_type = models.CharField(max_length=300, choices=p_cs)
-    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='draft')
-    label = models.CharField(max_length=10, choices=LABELS, default='Free')
-    created = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_now=True)
-    is_advanced = models.BooleanField(default=False)
-
-    def __str__(self) -> str:
-        return self.name
-    
-
-    class Meta:
-        verbose_name = 'Service'
-        verbose_name_plural = 'Services'
-        ordering = ['order']
-    
-class OrderProduct(models.Model):
-    id = models.UUIDField( 
-         primary_key = True, 
-         default = uuid.uuid4, 
-         editable = False) 
-
-    order = models.ForeignKey("Order", related_name='order_items', on_delete=models.CASCADE, blank=True, null=True)
-    payment = models.ForeignKey(Payment, on_delete=models.SET_NULL, blank=True, null=True)
-    product = models.ForeignKey(Product, on_delete=models.CASCADE,  related_name='order_items', blank=True, null=True)
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, blank=True, null=True)
-    # variations = models.ManyToManyField(Variations, blank=True)
-    quantity = models.IntegerField()
-    is_ordered = models.BooleanField(default=False)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-
-    def __str__(self):
-        return str(f"{self.product.name}")
-
-    class Meta:
-        db_table = 'order_product'
-        managed = True
-        verbose_name = 'Item'
-        verbose_name_plural = 'Items'
-    
-
-    @property
-    def get_sub_total(self):
-        
-        return (self.product.price) *  (self.quantity )
-
-    @property
-    def get_hours(self):
-        return (self.product.hours) if not None else 0
-    
-
-
-    
 
 class Order(models.Model):
     id = models.UUIDField( 
@@ -184,17 +114,4 @@ class Order(models.Model):
     
     def save(self, *args, **kwargs):
         super(Order, self).save(*args, **kwargs)
-    
-    def get_order_total(self):
-        total = 0
-        for p in self.order_items.all():
-            total += p.get_sub_total
-        return total
-    
-    @property
-    def get_rand_total(self):
-        total = 0
-        for p in self.order_items.all():
-            total += p.get_sub_total
-        return total
     
