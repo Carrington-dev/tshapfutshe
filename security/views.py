@@ -110,6 +110,7 @@ def donate(request):
             messages.error(request, _('There was an error with your submission. Please try again.'))
 
     context['form'] = form
+    context['order'] = order if 'order' in locals() else None
     return render(request, 'donations/donate.html', context)
 
 def paypal(request, pk):

@@ -21,8 +21,8 @@
         <div class="col-md-4"></div
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
           <div class="pricing-item">
-            <h3>Learners</h3>
-            <h4><sup>ZAR</sup>1,500<span> / Person</span></h4>
+            {% comment %} <h3>Learners</h3> {% endcomment %}
+            <h4><sup>{{ order.currency }}</sup>{{ order.order_total }}<span> / Person</span></h4>
             <ul>
               <li>Online Lessons</li>
               <li>Online Mock Tests</li>
