@@ -101,8 +101,8 @@ def donate(request):
             order.save()
             
             # return redirect(reverse('paypal', pk=order.pk))
-            return redirect('paypal', pk=order.pk)
-            # return redirect(reverse('paypal', args=[order.pk]))
+            # return redirect('paypal', pk=order.pk)
+            return redirect(reverse('paypal', args=[order.pk]))
             # return redirect('home')  # 'home' is the name of a URL pattern
 
         else:
