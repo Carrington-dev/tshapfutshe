@@ -17,7 +17,7 @@ def show_data(request):
         "keywords": 'Muṱa wa Lutendo wa Tshafutshe',
         "email": 'hello@tshapfutshesda.co.zw',
         "shop_email": 'uniforms@tshapfutshesda.co.zw',
-        "address": "Tshapfutshe SDA Church</p><p>Beit Bridge, ZW160101</p><p>Zimbabwe",
+        "address": "Tshapfutshe SDA Church</p><p>Beitbridge MS, ZW160101</p><p>Zimbabwe",
         "copyright_notice": f"© {datetime.now().year} { company }. All rights reserved.",
         "copyright": f"""© <span>{datetime.now().year}</span><strong class="px-1 sitename">{ company }.</strong> <span>All Rights Reserved.</span>""",
     }
