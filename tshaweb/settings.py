@@ -157,9 +157,9 @@ PAYFAST_SANDBOX_MERCHANT_ID = config("PAYFAST_SANDBOX_MERCHANT_ID")
 PAYFAST_SANDBOX_MERCHANT_KEY = config("PAYFAST_SANDBOX_MERCHANT_KEY")
 
 JAZZMIN_SETTINGS = {
-    "site_title": "Stemgon Inc",
-    "site_header": "Stemgon Inc",
-    "site_brand": "Stemgon Inc",
-    "site_logo": "img/favicon.png",
-    "welcome_sign": "Welcome to the Stemgon Inc Admin Dashboard",
+     "site_title": "Tshafutshe Admin Portal",
+    "site_header": "Tshafutshe Dashboard",
+    "site_brand": "Tshafutshe",
+    "welcome_sign": "Welcome to Tshafutshe Admin",
+    "copyright": "Tshafutshe",
 }
