@@ -15,7 +15,7 @@ class UserAdmin(admin.ModelAdmin):
 
 @admin.register(Order)
 class OrderAdmin(admin.ModelAdmin):
-    list_display = ('id', 'email', 'first_name', 'last_name', 'is_ordered', 'order_number', 'order_total', 'currency', 'status', 'date_ordered',)
+    list_display = ( 'email', 'first_name', 'last_name', 'is_ordered', 'order_number', 'order_total', 'currency', 'status', 'date_ordered',)
     list_filter = ('is_ordered', 'status', 'date_ordered')
     search_fields = ('email', 'first_name', 'last_name', 'order_number',)
     list_per_page = 20
