@@ -131,7 +131,6 @@ def paypal(request, pk):
 def payment_done(request, pk):
     order = get_object_or_404(Order, pk=pk)
     context = dict()
-    context['htmlForm'] = get_data_validate(request, order.order_number, order.order_total, order.pk)
     context['order'] = order
     context['title'] = "PayPal Payment"
     return render(request, 'donations/payment_done.html', context)
