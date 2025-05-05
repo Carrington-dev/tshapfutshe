@@ -1,6 +1,6 @@
 payment_method = [
     ("PayPal","PayPal"),
-    # ("PayFast","PayFast"),
+    ("PayFast","PayFast"),
     # ("PayPal","PayPal"),
     # ("Ozow","Ozow"),
     # ("Yoco","Yoco"),

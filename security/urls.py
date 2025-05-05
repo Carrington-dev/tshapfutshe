@@ -31,6 +31,7 @@ urlpatterns = [
     path('donate/', views.donate, name='donate'),
     path('donations/', views.donations, name='donations'),
     path('paypal/<str:pk>', views.paypal, name='paypal'),
+    path('payfast/<str:pk>', views.payfast, name='payfast'),
     path('before/<str:pk>', views.before, name='before'),
     path('canceled/<str:pk>', views.payment_canceled, name='canceled'),
     path('payment_done/<str:pk>', views.payment_done, name='payment_done'),
