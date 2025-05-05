@@ -21,6 +21,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -154,3 +155,11 @@ PAYFAST_MERCHANT_KEY = config("PAYFAST_MERCHANT_KEY")
 PAYFAST_MERCHANT_ID = config("PAYFAST_MERCHANT_ID")
 PAYFAST_SANDBOX_MERCHANT_ID = config("PAYFAST_SANDBOX_MERCHANT_ID")
 PAYFAST_SANDBOX_MERCHANT_KEY = config("PAYFAST_SANDBOX_MERCHANT_KEY")
+
+JAZZMIN_SETTINGS = {
+    "site_title": "Stemgon Inc",
+    "site_header": "Stemgon Inc",
+    "site_brand": "Stemgon Inc",
+    "site_logo": "img/favicon.png",
+    "welcome_sign": "Welcome to the Stemgon Inc Admin Dashboard",
+}
