@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-a95%n8j8mo@j(!=!h%9@246)+@n1evte*g47v40wo)5@4=gbv(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -125,7 +125,16 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Custom settings for the application
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+GRAPPELLI_ADMIN_TITLE = "Stemgon Inc"
+
+PAYFAST_MERCHANT_KEY = config("PAYFAST_MERCHANT_KEY")
+PAYFAST_MERCHANT_ID = config("PAYFAST_MERCHANT_ID")
+PAYFAST_SANDBOX_MERCHANT_ID = config("PAYFAST_SANDBOX_MERCHANT_ID")
+PAYFAST_SANDBOX_MERCHANT_KEY = config("PAYFAST_SANDBOX_MERCHANT_KEY")
+
+
+MEDIA_ROOT='/home/miammnsf/tshapfutshesda/media'
+STATIC_ROOT='/home/miammnsf/tshapfutshesda/static'# STATIC_ROOT = BASE_DIR / 'assets'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 STATICFILES_DIRS = [
