@@ -139,6 +139,9 @@ def payment_canceled(request, pk):
     return render(request, 'donations/payment_canceled.html')
 
 def before(request, pk):
+    order = get_object_or_404(Order, pk=pk)
+    order.is_ordered = True
+    order.save()
     return JsonResponse({'status': 'ok', 'message': 'Payment is being processed.'})
 
 def pay_clear(request, pk):
