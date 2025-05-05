@@ -129,7 +129,12 @@ def paypal(request, pk):
     return render(request, 'donations/paypal.html', context)
 
 def payment_done(request, pk):
-    return render(request, 'donations/payment_done.html')
+    order = get_object_or_404(Order, pk=pk)
+    context = dict()
+    context['htmlForm'] = get_data_validate(request, order.order_number, order.order_total, order.pk)
+    context['order'] = order
+    context['title'] = "PayPal Payment"
+    return render(request, 'donations/payment_done.html', context)
 
 def payment_canceled(request, pk):
     return render(request, 'donations/payment_canceled.html')
