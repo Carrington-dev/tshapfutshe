@@ -161,7 +161,8 @@ JAZZMIN_SETTINGS = {
     "site_logo": "img/favicon.png",
      "site_title": "Tshafutshe Admin Portal",
     "site_header": "Tshafutshe Dashboard",
-    "site_brand": "Tshafutshe",
+    "site_brand": "Tshafutshe SDA",
     "welcome_sign": "Welcome to Tshafutshe Admin",
-    "copyright": "Tshafutshe",
+    "copyright": "Tshafutshe SDA Church",
+    "search_model": "security.User",
 }
