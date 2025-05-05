@@ -168,3 +168,5 @@ JAZZMIN_SETTINGS = {
 }
 
 LOGOUT_REDIRECT_URL = '/admin/login/'
+SECURE_CROSS_ORIGIN_OPENER_POLICY='same-origin-allow-popups'
+CSRF_TRUSTED_ORIGINS = ["https://stemgon.co.za", "https://www.stemgon.co.za", "https://*.ngrok-free.app"]
