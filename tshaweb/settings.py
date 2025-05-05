@@ -157,6 +157,8 @@ PAYFAST_SANDBOX_MERCHANT_ID = config("PAYFAST_SANDBOX_MERCHANT_ID")
 PAYFAST_SANDBOX_MERCHANT_KEY = config("PAYFAST_SANDBOX_MERCHANT_KEY")
 
 JAZZMIN_SETTINGS = {
+  
+    "site_logo": "img/favicon.png",
      "site_title": "Tshafutshe Admin Portal",
     "site_header": "Tshafutshe Dashboard",
     "site_brand": "Tshafutshe",
