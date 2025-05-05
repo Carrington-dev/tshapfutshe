@@ -102,9 +102,7 @@ def donate(request):
             
             # return redirect(reverse('paypal', pk=order.pk))
             # return redirect('paypal', pk=order.pk)
-            return redirect(reverse('paypal', args=[order.pk]))
-            # return redirect('home')  # 'home' is the name of a URL pattern
-
+            return redirect(reverse(order.payment_method.lower(), args=[order.pk]))
         else:
             print("Form is not valid")
             messages.error(request, _('There was an error with your submission. Please try again.'))
@@ -112,6 +110,13 @@ def donate(request):
     context['form'] = form
     context['order'] = order if 'order' in locals() else None
     return render(request, 'donations/donate.html', context)
+
+def payfast(request, pk):
+    order = get_object_or_404(Order, pk=pk)
+    context = dict()
+    context['htmlForm'] = get_data_validate(request, order.order_number, order.order_total, order.pk)
+    context['order'] = order
+    return render(request, 'donations/payfast.html', context)
 
 def paypal(request, pk):
     order = get_object_or_404(Order, pk=pk)
