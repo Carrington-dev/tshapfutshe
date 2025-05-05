@@ -3,6 +3,10 @@ from security.models import Order, User
 
 from django.contrib.auth.models import Group
 
+admin.site.site_title = "Tshafutshe Admin Portal"
+admin.site.site_header = "Tshafutshe Dashboard"
+admin.site.index_title = "Welcome to Tshafutshe Admin"
+
 admin.site.unregister(Group)
 
 @admin.register(User)
