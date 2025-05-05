@@ -45,7 +45,7 @@ def order_num_generator(id, n=12):
 SHIPPING_FEE_PER_COUNTRY = 100
 def _generate_cart_id():
     cart_id = ""
-    characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890()!*$#%&^@'.lower()
+    characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890'.lower() #()!*$#%&^@
     cart_id_length = 50
     c_length = len(characters)
 
