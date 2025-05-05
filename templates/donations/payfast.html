@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% block title %}{% if title %}{{title}}{% else %}{{ company }}{% endif %}{% endblock %}
+
+{% block content %}
+<!-- Pricing Section -->
+<section id="pricing" class="pricing section">
+  
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>PayPal</h2>
+      <p><span>Pay Now </span> <span class="description-title">PayPal</span></p>
+    </div><!-- End Section Title -->
+
+   
+    
+    <div class="container">
+
+      <div class="row gy-3">
+        <div class="col-md-4"></div
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="pricing-item">
+            <h3>"Give, and it will be given to you." – Luke 6:38</h3>
+            <h4><sup>{{ order.currency }}</sup>{{ order.order_total }}<span> / Once off</span></h4>
+            <ul>
+              <li>No Extra Costs</li>
+              <li>No Hidden Costs</li>
+              <li>Safe And Secure</li>
+              <li>Card Not Stored</li>
+              <li>Visa / Mastercard</li>
+              <li>Trackable Goals</li>
+              {% comment %} <li class="na">Trackable Goals</li> {% endcomment %}
+            </ul>
+            <div class="btn-wrap">
+              {{ htmlForm | safe }}
+              {% comment %} <a href="#" class="btn-buy">Pay Now</a> {% endcomment %}
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+
+    </div> 
+    
+  </section><!-- /Pricing Section -->
+
+  
+{% endblock content %}
