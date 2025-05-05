@@ -90,7 +90,7 @@ def donate(request):
         print("Form data is valid:", form.is_valid())  # Debugging line to check form data
         if form.is_valid():
             order = form.save()
-            order.order_number = str(order.pk)[-12:-1]
+            order.order_number = order.order_number
             order.save()
             messages.success(request, f'Thank you {order.first_name} {order.last_name}, your order number is {order.order_number}. Please proceed to pay.')
             # url = f"{request.scheme}://{request.META['HTTP_HOST']}{str(reverse(order.payment_method.lower().strip(), args=[order.pk]))}"

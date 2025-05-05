@@ -96,7 +96,7 @@ class Order(models.Model):
     zip_code                = models.CharField(max_length=200, blank=True, null=True)
     status                  = models.CharField(max_length=100, choices=STATUS, default="Started")
     delivery_status         = models.CharField(max_length=100, choices=D_STATUS, default="Scheduled")
-    order_number            = models.CharField(max_length=300, blank=False, unique=False, default=order_num_gen)
+    order_number            = models.CharField(max_length=300, default=order_num_gen(), blank=True, null=True)
     date_ordered			= models.DateTimeField(verbose_name='date orderd', auto_now_add=True)
     last_viewed	            = models.DateTimeField(verbose_name='last viewed', auto_now=True)
     is_ordered              = models.BooleanField(default=False)
@@ -109,6 +109,7 @@ class Order(models.Model):
         return self.first_name + " " + self.last_name
     
     def save(self, *args, **kwargs):
-        super(Order, self).save(*args, **kwargs)
+        order = super(Order, self).save(*args, **kwargs)
+        
         
     

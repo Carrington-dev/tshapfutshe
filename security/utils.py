@@ -1,18 +1,21 @@
 import datetime
 import math
 import random
+from uuid import uuid4
 
 
 def order_num_gen():
-    id = None
-    yr = int(datetime.date.today().strftime("%Y"))
-    dt = int(datetime.date.today().strftime("%d"))
-    mt = int(datetime.date.today().strftime("%m"))
-    d = datetime.date(yr,mt,dt)
-    current_date = d.strftime("%Y%m%d")
+    return _generate_cart_id().upper()
+# def order_num_gen():
+#     id = None
+#     yr = int(datetime.date.today().strftime("%Y"))
+#     dt = int(datetime.date.today().strftime("%d"))
+#     mt = int(datetime.date.today().strftime("%m"))
+#     d = datetime.date(yr,mt,dt)
+#     current_date = d.strftime("%Y%m%d")
 
-    order_nun = str(current_date) + str(id)
-    return order_nun
+#     order_nun = str(current_date) + str(id)
+#     return order_nun
 
 def new_payment_id(id):
     
@@ -48,7 +51,7 @@ def _generate_cart_id():
 
     digits = "0123456789"
     OTP = ""
-    for i in range(30) :
+    for i in range(13) :
         OTP += characters[math.floor(random.random() * c_length)]
     return OTP
 
