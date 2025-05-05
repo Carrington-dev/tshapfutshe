@@ -27,6 +27,7 @@ STATUS = (
         ('Completed','Completed'),
         ('Cancelled','Cancelled'),
         ('Returned','Returned'),
+        ('Pending','Pending'),
 
 
     )
