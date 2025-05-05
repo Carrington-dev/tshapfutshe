@@ -1,5 +1,5 @@
 from django.contrib import admin
-from security.models import User
+from security.models import Order, User
 
 from django.contrib.auth.models import Group
 
@@ -8,3 +8,11 @@ admin.site.unregister(Group)
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
     list_display = ('id', 'email', 'username', 'first_name', 'last_name', 'is_admin',)
+
+@admin.register(Order)
+class OrderAdmin(admin.ModelAdmin):
+    list_display = ('id', 'email', 'first_name', 'last_name', 'is_ordered', 'order_number', 'order_total', 'status', 'date_ordered',)
+    list_filter = ('is_ordered', 'status', 'date_ordered')
+    search_fields = ('email', 'first_name', 'last_name', 'order_number',)
+    list_per_page = 20
+    ordering = ('-date_ordered',)
