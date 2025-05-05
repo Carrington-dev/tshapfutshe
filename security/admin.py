@@ -1,5 +1,5 @@
 from django.contrib import admin
-from security.models import Order, User
+from security.models import Order, Payment, User
 
 from django.contrib.auth.models import Group
 
@@ -20,3 +20,12 @@ class OrderAdmin(admin.ModelAdmin):
     search_fields = ('email', 'first_name', 'last_name', 'order_number',)
     list_per_page = 20
     ordering = ('-date_ordered',)
+
+@admin.register(Payment)
+class PaymentAdmin(admin.ModelAdmin):
+    list_display = ('id', 'user', 'payment_id', 'payment_method', 'amount_paid', 'status', 'created_at')
+    list_filter = ('payment_method', 'status', 'created_at')
+    search_fields = ('user__email', 'payment_id',)
+    list_per_page = 20
+    ordering = ('-created_at',)
+    list_editable = ('status',)

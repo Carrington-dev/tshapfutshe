@@ -1,4 +1,5 @@
 from decimal import Decimal
+import json
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
@@ -7,7 +8,7 @@ from django.utils.translation import gettext_lazy as _
 from django.contrib import messages
 
 from security.forms import OrderForm
-from security.models import Order
+from security.models import Order, Payment
 from security.pay_utils import get_data_validate
 
 def my_view(request):
@@ -145,4 +146,28 @@ def before(request, pk):
     return JsonResponse({'status': 'ok', 'message': 'Payment is being processed.'})
 
 def pay_clear(request, pk):
-    return JsonResponse({'status': 'ok', 'message': 'Payment is being processed.'})
+    order = get_object_or_404(Order, pk=pk)
+    data_body = json.loads(request.body)
+
+    payment = Payment(
+        # user = request.user if request.user.is_authenticated()  else None,
+        payment_id = data_body['transactionID'],
+        payment_method = data_body['payment_method'],
+        amount_paid = data_body['total'],
+        status = data_body['status'],
+    )
+    payment.save()
+    order.payment = payment
+    order.is_ordered = True
+    order.status = "Completed"
+    order.device_name = request.headers['User-Agent']
+    order.save()
+    messages.success(request, f'You have successfully paid for your order with order number {order.order_number}')
+    
+    data = {
+        "message": f"You have successfully paid for your order with order number {order.order_number}",
+        "order_number": order.order_number,
+        "transID": payment.payment_id,
+    }
+    # return Response(data, )
+    return JsonResponse(data=data, safe=False)
