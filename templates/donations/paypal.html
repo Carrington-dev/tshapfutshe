@@ -257,10 +257,10 @@
 
  
   
-  <div class="container">
+  <div class="container text-center">
 
-    <div class="row gy-3">
-      <div class="col-md-12" data-aos="fade-up" data-aos-delay="200">
+    <div class="row gy-3 text-center">
+      <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
         <div class="pricing-item text-center">
           <h3>"Give, and it will be given to you." – Luke 6:38</h3>
           <h4><sup>{{ order.currency }}</sup>{{ order.order_total }}<span> / Once off</span></h4>
@@ -274,39 +274,6 @@
   
 </section><!-- /Pricing Section -->
 
-<!--  -->
-<!-- ======= Pricing Section ======= -->
-<section id="pricing" class="pricing">
 
-    <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-            <h2>Payment</h2>
-            <p>Pay With {{ order.payment_method }}</p>
-        </header>
-
-        <div class="row gy-4" data-aos="fade-left">
-
-            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200"></div>
-            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-                <div class="box">
-                    
-                      <div id="paypal-button-container"></div> 
-                    
-                   
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-            </div>
-
-           
-
-
-        </div>
-
-    </div>
-
-</section>
-<!-- End Pricing Section -->
 
 {% endblock content %}
