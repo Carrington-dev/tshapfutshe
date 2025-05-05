@@ -1,3 +1,4 @@
+from decimal import Decimal
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
@@ -114,7 +115,8 @@ def donate(request):
 def payfast(request, pk):
     order = get_object_or_404(Order, pk=pk)
     context = dict()
-    context['htmlForm'] = get_data_validate(request, order.order_number, order.order_total, order.pk)
+    
+    context['htmlForm'] = get_data_validate(request, order.order_number, (round( Decimal(order.order_total) * Decimal(18.5))), order.pk)
     context['order'] = order
     return render(request, 'donations/payfast.html', context)
 
