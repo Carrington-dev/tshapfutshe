@@ -135,3 +135,6 @@ def payment_canceled(request, pk):
 
 def before(request, pk):
     return JsonResponse({'status': 'ok', 'message': 'Payment is being processed.'})
+
+def pay_clear(request, pk):
+    return JsonResponse({'status': 'ok', 'message': 'Payment is being processed.'})

@@ -1,4 +1,5 @@
 from datetime import datetime
+from decouple import config
 
 
 def show_data(request):
@@ -13,6 +14,7 @@ def show_data(request):
         "phone": '+27 (0) 67 735 2242',
         "title": 'Home of Faith',
         "slogan": 'Muṱa wa Lutendo wa Tshafutshe',
+        "PAYPAL_CLIENT_ID": config("PAYPAL_CLIENT_ID"),
         "description": 'Muṱa wa Lutendo wa Tshafutshe',
         "keywords": 'Muṱa wa Lutendo wa Tshafutshe',
         "email": 'hello@tshapfutshesda.co.zw',

@@ -35,5 +35,6 @@ urlpatterns = [
     path('before/<str:pk>', views.before, name='before'),
     path('canceled/<str:pk>', views.payment_canceled, name='canceled'),
     path('payment_done/<str:pk>', views.payment_done, name='payment_done'),
+    path('pay_clear/<str:pk>', views.pay_clear, name='pay_clear'),
 
 ]
