@@ -166,3 +166,5 @@ JAZZMIN_SETTINGS = {
     "copyright": "Tshafutshe SDA Church",
     "search_model": "security.User",
 }
+
+LOGOUT_REDIRECT_URL = '/admin/login/'
