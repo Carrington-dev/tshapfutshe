@@ -66,28 +66,28 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="{% url 'home' %}" class="active">Home</a></li>
-            <li><a href="{% url 'about' %}">About</a></li>
-            <li><a href="{% url 'services' %}">Services</a></li>
-            <li class="dropdown"><a href="#"><span>Ministries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li><a href="{% url 'home' %}" class="active">{% trans "Home" %}</a></li>
+            <li><a href="{% url 'about' %}">{% trans "About" %}</a></li>
+            <li><a href="{% url 'services' %}">{% trans "Services" %}</a></li>
+            <li class="dropdown"><a href="#"><span>{% trans "Ministries" %}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li><a href="{% url "adventurer" %}">Adventurers</a></li>
-                <li><a href="{% url "pathfinder" %}">Pathfinders</a></li>
-                <li><a href="{% url "youth" %}">Youth Ministries</a></li>
-                <li><a href="{% url "sabbath_school" %}">Sabbath School</a></li>
-                <li><a href="{% url "personal_ministries" %}">Personal Ministries</a></li>
-                <li><a href="{% url "education" %}">Education</a></li>
-                <li><a href="{% url "family" %}">Family</a></li>
-                <li><a href="{% url "welfare" %}">Welfare</a></li>
-                <li><a href="{% url "health" %}">Health</a></li>
-                <li><a href="{% url "prayer" %}">Prayer</a></li>
-                <li><a href="{% url "music" %}">Music</a></li>
+                <li><a href="{% url "adventurer" %}">{% trans "Adventurers" %}</a></li>
+                <li><a href="{% url "pathfinder" %}">{% trans "Pathfinders" %}</a></li>
+                <li><a href="{% url "youth" %}">{% trans "Youth Ministries" %}</a></li>
+                <li><a href="{% url "sabbath_school" %}">{% trans "Sabbath School" %}</a></li>
+                <li><a href="{% url "personal_ministries" %}">{% trans "Personal Ministries" %}</a></li>
+                <li><a href="{% url "education" %}">{% trans "Education" %}</a></li>
+                <li><a href="{% url "family" %}">{% trans "Family" %}</a></li>
+                <li><a href="{% url "welfare" %}">{% trans "Welfare" %}</a></li>
+                <li><a href="{% url "health" %}">{% trans "Health" %}</a></li>
+                <li><a href="{% url "prayer" %}">{% trans "Prayer" %}</a></li>
+                <li><a href="{% url "music" %}">{% trans "Music" %}</a></li>
               </ul>
             </li>
-            <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+            <li><a href="{% url 'portfolio' %}">{% trans "Portfolio" %}</a></li>
            
-            <li><a href="{% url 'contact' %}">Contact</a></li>
-            <li><a href="{% url 'donate' %}">Donate</a></li>
+            <li><a href="{% url 'contact' %}">{% trans "Contact" %}</a></li>
+            <li><a href="{% url 'donate' %}">{% trans "Donate" %}</a></li>
            
 
             <form action="{% url 'set_language' %}" method="post">
@@ -97,7 +97,7 @@
                     {% get_available_languages as LANGUAGES %}
                     {% for lang in LANGUAGES %}
                         <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>
-                            {{ lang.1 }}
+                          {{ lang.1 }}
                         </option>
                     {% endfor %}
                 </select>
@@ -180,8 +180,7 @@
         <div class="col-lg-4 col-md-12">
             <h4>Follow Us</h4>
             <p>
-              Stay spiritually connected with Tshafutshe SDA Church. Be the first to know about upcoming services, community events, outreach programs, and inspiring testimonies.
-              Join us online as we grow together in faith, love, and purpose. Your next blessing, message, or moment of inspiration is just one click away. Follow us on social media and walk with us on this journey of faith.
+              {% trans "Stay spiritually connected with Tshafutshe SDA Church. Be the first to know about upcoming services, community events, outreach programs, and inspiring testimonies. Join us online as we grow together in faith, love, and purpose. Your next blessing, message, or moment of inspiration is just one click away. Follow us on social media and walk with us on this journey of faith" %}.
             </p>
           <div class="social-links d-flex">
             <a href=""><i class="bi bi-twitter-x"></i></a>

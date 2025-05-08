@@ -148,8 +148,8 @@ LANGUAGE_CODE = 'en'
 USE_I18N = True
 
 LANGUAGES = [
-    ('en', 'English'),
-    ('de', 'Tshivenda'),
+    ('en', _('English')),
+    ('de', _('Tshivenda')),
 ]
 
 LOCALE_PATHS = [

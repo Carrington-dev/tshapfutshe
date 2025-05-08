@@ -11,12 +11,12 @@
   <div class="container">
     <div class="row gy-4">
       <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-        <h1>{% trans "Our" %} <span>Beliefs</span></h1>
+        <h1>{% trans "Our" %} <span>{% trans "Beliefs" %}</span></h1>
         <p>
-          Seventh-day Adventist beliefs are meant to permeate your whole life. Growing out of scriptures that paint a compelling portrait of God, you are invited to explore, experience and know the One who desires to make us whole.
+          {% trans "Seventh-day Adventist beliefs are meant to permeate your whole life. Growing out of scriptures that paint a compelling portrait of God, you are invited to explore, experience and know the One who desires to make us whole" %}.
         </p>
         <div class="d-flex">
-          <a href="#about" class="btn-get-started">Get Started</a>
+          <a href="#about" class="btn-get-started">{% trans "Get Started" %}</a>
           <a href="https://youtu.be/JzWbu371MuI?si=MRLR5skmAF6Yc1HY" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
         </div>
       </div>
@@ -36,27 +36,27 @@
       <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
         <div class="service-item position-relative">
           <div class="icon"><i class="bi bi-activity icon"></i></div>
-          <h4><a href="" class="stretched-link">The Good News of Salvation</a></h4>
-          <p>Understanding that salvation is a free gift through Jesus Christ, and baptism is an expression of our faith in His life, death, and resurrection 
+          <h4><a href="" class="stretched-link">{% trans "The Good News of Salvation" %}</a></h4>
+          <p>{% trans "Understanding that salvation is a free gift through Jesus Christ, and baptism is an expression of our faith in His life, death, and resurrection " %}
             <br>
-            <i>(Ephesians 2:8-9).</i></p>
+            <i>({% trans "Ephesians 2:8-9" %}).</i></p>
         </div>
       </div><!-- End Service Item -->
 
       <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
         <div class="service-item position-relative">
           <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-          <h4><a href="" class="stretched-link">The Importance of the Sabbath</a></h4>
-          <p> Embracing the Seventh-day Sabbath as a day of rest, worship, and personal connection with God. We will explore the role of the Sabbath in your spiritual growth and commitment to God's commandments.</p>
+          <h4><a href="" class="stretched-link">{% trans "The Importance of the Sabbath" %}</a></h4>
+          <p> {% trans "Embracing the Seventh-day Sabbath as a day of rest, worship, and personal connection with God. We will explore the role of the Sabbath in your spiritual growth and commitment to God's commandments" %}.</p>
         </div>
       </div><!-- End Service Item -->
 
       <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
         <div class="service-item position-relative">
           <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-          <h4><a href="" class="stretched-link">Living the Adventist Message</a></h4>
+          <h4><a href="" class="stretched-link">{% trans "Living the Adventist Message" %}</a></h4>
           <p>
-            Exploring the Three Angels' Messages of Revelation 14, which call us to worship God, live in faith, and share the gospel with the world, especially as we await Christ's soon return.
+            {% trans "Exploring the Three Angels' Messages of Revelation 14, which call us to worship God, live in faith, and share the gospel with the world, especially as we await Christ's soon return" %}.
           </p>
         </div>
       </div><!-- End Service Item -->
@@ -64,8 +64,8 @@
       <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
         <div class="service-item position-relative">
           <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-          <h4><a href="" class="stretched-link">Health and Wholeness</a></h4>
-          <p>The Adventist lifestyle emphasizes caring for the body as the temple of God (1 Corinthians 6:19-20). We will discuss how spiritual and physical health go hand in hand in your journey to baptism and beyond.</p>
+          <h4><a href="" class="stretched-link">{% trans "Health and Wholeness" %}</a></h4>
+          <p>{% trans "The Adventist lifestyle emphasizes caring for the body as the temple of God (1 Corinthians 6:19-20). We will discuss how spiritual and physical health go hand in hand in your journey to baptism and beyond" %}.</p>
         </div>
       </div><!-- End Service Item -->
 
@@ -80,8 +80,8 @@
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>About</h2>
-    <p><span>Find Out More</span> <span class="description-title">About Us</span></p>
+    <h2>{% trans "About" %}</h2>
+    <p><span>{% trans "Find Out More" %}</span> <span class="description-title">{% trans "About Us" %}</span></p>
   </div><!-- End Section Title -->
 
   <div class="container">
@@ -89,37 +89,35 @@
     <div class="row gy-3">
 
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <img src="{% static 'img/about.jpg' %}" alt="{{ company }} | {{ title }}" class="img-fluid">
+        <img src="{% static 'img/about.jpg' %}" alt="" class="img-fluid">
       </div>
 
       <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
         <div class="about-content ps-0 ps-lg-3">
-          <h3>Welcome to {{ company }}  Educational Ministry</h3>
+          <h3>{% trans "Welcome to Tshafutshe SDA Church  Educational Ministry" %}</h3>
           <p class="fst-italic">
-            At {{ company }}, we offer a holistic educational experience where spiritual growth is just as important as academic development. Guided by our faith in Jesus Christ, we believe that education should nurture the whole person—socially, emotionally, physically, mentally, and spiritually. Through our dynamic programs, we aim to help our students grow in faith, wisdom, and service to others.
-          </p>
+            {% trans "At Tshafutshe SDA Church, we offer a holistic educational experience where spiritual growth is just as important as academic development. Guided by our faith in Jesus Christ, we believe that education should nurture the whole person—socially, emotionally, physically, mentally, and spiritually. Through our dynamic programs, we aim to help our students grow in faith, wisdom, and service to others" %}.</p>
           <ul>
             <li>
               <i class="bi bi-diagram-3"></i>
               <div>
-                <h4>The Great Commission</h4>
-                <p>“Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost: Teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you alway, even unto the end of the world.” — Matthew 28:19-20</p>
+                <h4>{% trans "The Great Commission" %}</h4>
+                <p>“{% trans "Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost: Teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you alway, even unto the end of the world." %}” — {% trans "Matthew 28:19-20" %}</p>
               </div>
             </li>
             <li>
               <i class="bi bi-fullscreen-exit"></i>
               <div>
-                <h4>Our Vision for Education in Christ
+                <h4>{% trans "Our Vision for Education in Christ" %}
                 </h4>
                 <p>
-                  At Tshafutshe SDA Church, we strive to create a Christ-centered learning environment where every individual is equipped to live according to God's principles. We believe that education is not just about academic knowledge but about preparing hearts for service and spiritual growth. 
+                  {% trans "At Tshafutshe SDA Church, we strive to create a Christ-centered learning environment where every individual is equipped to live according to God's principles. We believe that education is not just about academic knowledge but about preparing hearts for service and spiritual growth." %}
                 </p>
               </div>
             </li>
           </ul>
           <p>
-            Our programs are designed to help individuals discover their God-given purpose, nurture their spiritual walk, and serve others with love and humility.
-            We believe in holistic ministry—touching hearts, minds, and lives. Join us in service, fellowship, and purpose.
+            {% trans "Our programs are designed to help individuals discover their God-given purpose, nurture their spiritual walk, and serve others with love and humility" %}.
           </p>
         </div>
 
@@ -140,35 +138,35 @@
       <div class="col-lg-6">
 
         <div class="progress">
-          <span class="skill"><span>Faith-Focused Learning</span> <i class="val">100%</i></span>
+          <span class="skill"><span>{% trans "Faith-Focused Learning" %}</span> <i class="val">100%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div><!-- End Skills Item -->
 
         <div class="progress">
-          <span class="skill"><span>Holistic Development</span> <i class="val">99.9%</i></span>
+          <span class="skill"><span>{% trans "Holistic Development" %}</span> <i class="val">99.9%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="99.9" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div><!-- End Skills Item -->
 
         <div class="progress">
-          <span class="skill"><span>Character Building</span> <i class="val">97%</i></span>
+          <span class="skill"><span>{% trans "Character Building" %}</span> <i class="val">97%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div><!-- End Skills Item -->
 
         <div class="progress">
-          <span class="skill"><span>Service-Oriented Education</span> <i class="val">99.9%</i></span>
+          <span class="skill"><span>{% trans "Service-Oriented Education" %}</span> <i class="val">99.9%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="99.9" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div><!-- End Skills Item -->
 
         <div class="progress">
-          <span class="skill"><span>Community Engagement</span> <i class="val">97%</i></span>
+          <span class="skill"><span>{% trans "Community Engagement" %}</span> <i class="val">97%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
@@ -179,35 +177,35 @@
       <div class="col-lg-6">
 
         <div class="progress">
-          <span class="skill"><span>Sabbath Observance</span> <i class="val">99%</i></span>
+          <span class="skill"><span>{% trans "Sabbath Observance" %}</span> <i class="val">99%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div><!-- End Skills Item -->
 
         <div class="progress">
-          <span class="skill"><span>God Head</span> <i class="val">90%</i></span>
+          <span class="skill"><span>{% trans "God Head" %}</span> <i class="val">90%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div><!-- End Skills Item -->
 
         <div class="progress">
-          <span class="skill"><span>The Great Controversy</span> <i class="val">95%</i></span>
+          <span class="skill"><span>{% trans "The Great Controversy" %}</span> <i class="val">95%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div><!-- End Skills Item -->
 
         <div class="progress">
-          <span class="skill"><span>Christ's Second Coming</span> <i class="val">95%</i></span>
+          <span class="skill"><span>{% trans "Christ's Second Coming" %}</span> <i class="val">95%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div><!-- End Skills Item -->
 
         <div class="progress">
-          <span class="skill"><span>The Holy Spirit</span> <i class="val">95%</i></span>
+          <span class="skill"><span>{% trans "The Holy Spirit" %}</span> <i class="val">95%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
@@ -220,6 +218,8 @@
   </div>
 
 </section><!-- /Skills Section -->
+
+
 
 <!-- Stats Section -->
 <section id="stats" class="stats section">

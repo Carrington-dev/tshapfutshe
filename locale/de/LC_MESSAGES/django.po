@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-08 15:40+0200\n"
-"PO-Revision-Date: 2025-05-08 15:41+0000\n"
+"POT-Creation-Date: 2025-05-08 18:34+0200\n"
+"PO-Revision-Date: 2025-05-08 18:39+0000\n"
 "Last-Translator: Carrington Muleya <crn96m@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -23,25 +23,134 @@ msgstr ""
 msgid "Tshapfutshe SDA Church"
 msgstr "Tshapfutshe SDA Church"
 
-#: .\security\context_processor.py:16
+#: .\security\context_processor.py:18
 msgid "Home of Faith"
 msgstr "Hayani ha Lutendo"
 
-#: .\security\views.py:15
+#: .\security\views.py:16
 msgid "Welcome to "
 msgstr "Vho tanganedzwa kha"
 
-#: .\security\views.py:110
+#: .\security\views.py:111
 msgid "There was an error with your submission. Please try again."
 msgstr ""
 "Ho vha na vhukhakhi kha zwe vha rumela. Ndi khou humbela uri ni lingedze "
 "hafhu."
 
-#: .\templates\base.html:111
+#: .\templates\base.html:69
+#: .\venv\Lib\site-packages\grappelli\dashboard\templates\admin\index.html:25
+#: .\venv\Lib\site-packages\grappelli\templates\admin\500.html:9
+#: .\venv\Lib\site-packages\grappelli\templates\admin\app_index.html:11
+#: .\venv\Lib\site-packages\grappelli\templates\admin\auth\user\change_password.html:7
+#: .\venv\Lib\site-packages\grappelli\templates\admin\base.html:142
+#: .\venv\Lib\site-packages\grappelli\templates\admin\change_form.html:153
+#: .\venv\Lib\site-packages\grappelli\templates\admin\change_list.html:141
+#: .\venv\Lib\site-packages\grappelli\templates\admin\change_list_filter_confirm.html:141
+#: .\venv\Lib\site-packages\grappelli\templates\admin\change_list_filter_confirm_sidebar.html:142
+#: .\venv\Lib\site-packages\grappelli\templates\admin\change_list_filter_sidebar.html:142
+#: .\venv\Lib\site-packages\grappelli\templates\admin\constance\change_list.html:72
+#: .\venv\Lib\site-packages\grappelli\templates\admin\csv_export_selected_confirmation.html:9
+#: .\venv\Lib\site-packages\grappelli\templates\admin\delete_confirmation.html:13
+#: .\venv\Lib\site-packages\grappelli\templates\admin\delete_selected_confirmation.html:13
+#: .\venv\Lib\site-packages\grappelli\templates\admin\index.html:18
+#: .\venv\Lib\site-packages\grappelli\templates\admin\invalid_setup.html:9
+#: .\venv\Lib\site-packages\grappelli\templates\admin\object_history.html:9
+#: .\venv\Lib\site-packages\grappelli\templates\admin_doc\bookmarklets.html:8
+#: .\venv\Lib\site-packages\grappelli\templates\admin_doc\index.html:9
+#: .\venv\Lib\site-packages\grappelli\templates\admin_doc\missing_docutils.html:8
+#: .\venv\Lib\site-packages\grappelli\templates\admin_doc\model_detail.html:20
+#: .\venv\Lib\site-packages\grappelli\templates\admin_doc\model_index.html:23
+#: .\venv\Lib\site-packages\grappelli\templates\admin_doc\template_filter_index.html:25
+#: .\venv\Lib\site-packages\grappelli\templates\admin_doc\template_tag_index.html:27
+#: .\venv\Lib\site-packages\grappelli\templates\admin_doc\view_detail.html:7
+#: .\venv\Lib\site-packages\grappelli\templates\admin_doc\view_index.html:23
+#: .\venv\Lib\site-packages\grappelli\templates\grp_doc\basic_page_structure.html:132
+#: .\venv\Lib\site-packages\grappelli\templates\grp_doc\context_navigation.html:55
+#: .\venv\Lib\site-packages\grappelli\templates\registration\password_change_done.html:6
+#: .\venv\Lib\site-packages\grappelli\templates\registration\password_change_form.html:6
+#: .\venv\Lib\site-packages\grappelli\templates\reversion\recover_form.html:7
+#: .\venv\Lib\site-packages\grappelli\templates\reversion\recover_list.html:6
+#: .\venv\Lib\site-packages\grappelli\templates\reversion\revision_form.html:7
+#: .\venv\Lib\site-packages\grappelli\templates\smuggler\load_data_form.html:24
+msgid "Home"
+msgstr "Hayani"
+
+#: .\templates\base.html:70 .\templates\security\about.html:83
+#: .\templates\security\index.html:82
+msgid "About"
+msgstr "Rine"
+
+#: .\templates\base.html:71
+msgid "Services"
+msgstr "Tshumelo"
+
+#: .\templates\base.html:72
+msgid "Ministries"
+msgstr "Mihasho"
+
+#: .\templates\base.html:74
+msgid "Adventurers"
+msgstr "Vhaḓivhi"
+
+#: .\templates\base.html:75
+msgid "Pathfinders"
+msgstr "Pathfinders"
+
+#: .\templates\base.html:76
+msgid "Youth Ministries"
+msgstr "Mihasho ya Vhaswa"
+
+#: .\templates\base.html:77
+msgid "Sabbath School"
+msgstr "Tshikolo tsha Savhatha"
+
+#: .\templates\base.html:78
+msgid "Personal Ministries"
+msgstr "Vhuḓinḓa ha Muthu"
+
+#: .\templates\base.html:79
+#, fuzzy
+#| msgid "Syndication"
+msgid "Education"
+msgstr "Ṱhuṱhuwedzo"
+
+#: .\templates\base.html:80
+msgid "Family"
+msgstr "Muṱa"
+
+#: .\templates\base.html:81
+msgid "Welfare"
+msgstr "Ndondolo"
+
+#: .\templates\base.html:82
+msgid "Health"
+msgstr "Mutakalo"
+
+#: .\templates\base.html:83
+msgid "Prayer"
+msgstr "Thabelo"
+
+#: .\templates\base.html:84
+msgid "Music"
+msgstr "Muzika"
+
+#: .\templates\base.html:87
+msgid "Portfolio"
+msgstr "Phothifoḽio"
+
+#: .\templates\base.html:89
+msgid "Contact"
+msgstr "Khwamano"
+
+#: .\templates\base.html:90
+msgid "Donate"
+msgstr "Ṋea"
+
+#: .\templates\base.html:126
 msgid "Stay Connected with Us"
 msgstr "Kha vha dzule vho kwamana na rine"
 
-#: .\templates\base.html:113
+#: .\templates\base.html:128
 msgid ""
 "Sign up for our newsletter and be the first to receive important updates "
 "from Tshafutshe SDA Church’s Education Program—including church news, "
@@ -54,21 +163,37 @@ msgstr ""
 "zwihulwane, na mafhungo a ṱuṱuwedzaho u bva kha tshitshavha tshashu tsha u "
 "guda tshi tshilaho, tshi ṱuṱuwedzwaho nga lutendo ."
 
-#: .\templates\base.html:136
+#: .\templates\base.html:151
 msgid "Phone"
 msgstr "Founu"
 
-#: .\templates\base.html:137
+#: .\templates\base.html:152
 msgid "Email"
 msgstr "Imeili"
 
-#: .\templates\base.html:142
+#: .\templates\base.html:157
 msgid "Branches"
 msgstr "Madavhi"
 
-#: .\templates\base.html:152
+#: .\templates\base.html:167
 msgid "Our Partners"
 msgstr "Vhashumisani vhashu"
+
+#: .\templates\base.html:183
+msgid ""
+"Stay spiritually connected with Tshafutshe SDA Church. Be the first to know "
+"about upcoming services, community events, outreach programs, and inspiring "
+"testimonies. Join us online as we grow together in faith, love, and purpose."
+" Your next blessing, message, or moment of inspiration is just one click "
+"away. Follow us on social media and walk with us on this journey of faith"
+msgstr ""
+"Dzulani no kwamana muyani na Kereke ya Tshafutshe SDA. Ivhani vha u thoma u "
+"ḓivha nga ha tshumelo dzine dza khou ḓa, zwiitea zwa tshitshavha, "
+"mbekanyamushumo dza u swikelela vhathu, na vhuṱanzi vhu ṱuṱuwedzaho. Kha vha"
+" ri dzhoine kha inthanethe musi ri tshi khou aluwa roṱhe kha lutendo, "
+"lufuno, na ndivho. Phaṱhutshedzo yaṋu i tevhelaho, mulaedza, kana tshifhinga"
+" tsha u ṱuṱuwedzwa zwi tou vha kule nga u tou ṋanga luthihi. Ri tevheleni "
+"kha social media ni tshimbile na rine kha holu lwendo lwa lutendo"
 
 #: .\templates\donations\donate.html:14
 msgid "His"
@@ -76,7 +201,201 @@ msgstr "Tshawe"
 
 #: .\templates\security\about.html:14
 msgid "Our"
-msgstr "Zwashu"
+msgstr "Lwashu"
+
+#: .\templates\security\about.html:14
+msgid "Beliefs"
+msgstr "Lutendo"
+
+#: .\templates\security\about.html:16
+msgid ""
+"Seventh-day Adventist beliefs are meant to permeate your whole life. Growing"
+" out of scriptures that paint a compelling portrait of God, you are invited "
+"to explore, experience and know the One who desires to make us whole"
+msgstr ""
+"Lutendo lwa Vha-Adventist vha Ḓuvha ḽa Vhusumbe lwo itelwa u dzhena "
+"vhutshiloni haṋu hoṱhe. U aluwa u bva kha maṅwalo ane a pennda tshifanyiso "
+"tshi kombetshedzaho tsha Mudzimu, u rambiwa u ṱolisisa, u tshenzhela na u "
+"ḓivha Ene ane a tama u ri ita vho fhelelaho ."
+
+#: .\templates\security\about.html:19 .\templates\security\index.html:19
+msgid "Get Started"
+msgstr "Thomani"
+
+#: .\templates\security\about.html:39 .\templates\security\index.html:38
+msgid "The Good News of Salvation"
+msgstr "Mafhungo Madifha A U Tshidzwa "
+
+#: .\templates\security\about.html:40 .\templates\security\index.html:39
+msgid ""
+"Understanding that salvation is a free gift through Jesus Christ, and "
+"baptism is an expression of our faith in His life, death, and resurrection "
+msgstr ""
+"U pfesesa uri u tshidzwa ndi tshifhiwa tsha mahala nga Yesu Kristo, nahone "
+"ndovhedzo ndi tsumbo ya lutendo lwashu kha vhutshilo hawe, lufu lwawe, na "
+"mvuwo yawe ."
+
+#: .\templates\security\about.html:42 .\templates\security\index.html:41
+msgid "Ephesians 2:8-9"
+msgstr "Vha-Efesa 2:8-9"
+
+#: .\templates\security\about.html:49 .\templates\security\index.html:48
+msgid "The Importance of the Sabbath"
+msgstr "Ndeme ya Sabatha"
+
+#: .\templates\security\about.html:50 .\templates\security\index.html:49
+msgid ""
+"Embracing the Seventh-day Sabbath as a day of rest, worship, and personal "
+"connection with God. We will explore the role of the Sabbath in your "
+"spiritual growth and commitment to God's commandments"
+msgstr ""
+"U ṱanganedza Savhatha ya Ḓuvha ḽa Vhusumbe sa ḓuvha ḽa u awela, vhurabeli, "
+"na vhushaka ha muthu nga eṱhe na Mudzimu. Ri do sedzulusa mushumo wa Sabatha"
+" kha nyaluwo yavho ya muya na u dikumedza kha ndaela dza Mudzimu ."
+
+#: .\templates\security\about.html:57 .\templates\security\index.html:56
+msgid "Living the Adventist Message"
+msgstr "U tshila Mulaedza wa Adventist "
+
+#: .\templates\security\about.html:59 .\templates\security\index.html:58
+msgid ""
+"Exploring the Three Angels' Messages of Revelation 14, which call us to "
+"worship God, live in faith, and share the gospel with the world, especially "
+"as we await Christ's soon return"
+msgstr ""
+"U ṱoḓisisa Milaedza ya Vharuṅwa Vhararu ya Nzumbululo 14, ine ya ri vhidza "
+"uri ri gwadamele Mudzimu, ri tshile nga lutendo, na u kovhelana mafhungo "
+"madifha na shango, zwihuluhulu musi ro lindela u vhuya ha Kristo hu si kale "
+"."
+
+#: .\templates\security\about.html:67 .\templates\security\index.html:66
+msgid "Health and Wholeness"
+msgstr "Mutakalo na Vhuḓifari ho Fhelelaho"
+
+#: .\templates\security\about.html:68 .\templates\security\index.html:67
+msgid ""
+"The Adventist lifestyle emphasizes caring for the body as the temple of God "
+"(1 Corinthians 6:19-20). We will discuss how spiritual and physical health "
+"go hand in hand in your journey to baptism and beyond"
+msgstr ""
+"Vhutshilo ha Adventist vhu ombedzela u ṱhogomela muvhili sa thembele ya "
+"Mudzimu (1 Vhakorinta 6:19-20). Ri ḓo haseledza nḓila ine mutakalo wa muya "
+"na wa ṋama zwa tshimbila ngayo kha lwendo lwaṋu lwa u ya ndovhedzoni na u "
+"fhira"
+
+#: .\templates\security\about.html:84 .\templates\security\index.html:83
+msgid "Find Out More"
+msgstr "Kha vha wane zwinzhi"
+
+#: .\templates\security\about.html:84 .\templates\security\index.html:83
+msgid "About Us"
+msgstr "Nga ha Rine"
+
+#: .\templates\security\about.html:97 .\templates\security\index.html:96
+msgid "Welcome to Tshafutshe SDA Church  Educational Ministry"
+msgstr "Ni tanganedze kha Muhasho wa Pfunzo wa Kereke ya Tshafutshe SDA"
+
+#: .\templates\security\about.html:99 .\templates\security\index.html:98
+msgid ""
+"At Tshafutshe SDA Church, we offer a holistic educational experience where "
+"spiritual growth is just as important as academic development. Guided by our"
+" faith in Jesus Christ, we believe that education should nurture the whole "
+"person—socially, emotionally, physically, mentally, and spiritually. Through"
+" our dynamic programs, we aim to help our students grow in faith, wisdom, "
+"and service to others"
+msgstr ""
+"Kha kereke ya Tshafutshe SDA, ri ṋetshedza tshenzhemo ya pfunzo yo fhelelaho"
+" hune nyaluwo ya muya ya vha ya ndeme u fana na mveledziso ya zwa pfunzo. Ri"
+" tshi livhiswa nga lutendo lwashu kha Yesu Kristo, ri tenda uri pfunzo i "
+"fanela u alusa muthu oṱhe—kha matshilisano, maḓipfele, ṋamani, muhumbuloni, "
+"na muyani. Nga mbekanyamushumo dzashu dzi re na maanḓa, ri ṱoḓa u thusa "
+"vhagudiswa vhashu uri vha aluwe kha lutendo, vhuṱali, na tshumelo kha vhaṅwe"
+" ."
+
+#: .\templates\security\about.html:104 .\templates\security\index.html:103
+msgid "The Great Commission"
+msgstr "Khomishini Khulwane"
+
+#: .\templates\security\about.html:105 .\templates\security\index.html:104
+msgid ""
+"Go ye therefore, and teach all nations, baptizing them in the name of the "
+"Father, and of the Son, and of the Holy Ghost: Teaching them to observe all "
+"things whatsoever I have commanded you: and, lo, I am with you alway, even "
+"unto the end of the world."
+msgstr ""
+"Iyani-ha ni ite tshakha dzoṱhe vhafunziwa vhanga, ni vha lovhedze dzinani ḽa"
+" Khotsi na ḽa Murwa na ḽa Muya Mukhethwa, ni vha funze u ita zwoṱhe zwe nda "
+"ni laya."
+
+#: .\templates\security\about.html:105 .\templates\security\index.html:104
+msgid "Matthew 28:19-20"
+msgstr "Mateo 28:19-20"
+
+#: .\templates\security\about.html:111 .\templates\security\index.html:110
+msgid "Our Vision for Education in Christ"
+msgstr "Bono ḽashu ḽa Pfunzo kha Kristo"
+
+#: .\templates\security\about.html:114 .\templates\security\index.html:113
+msgid ""
+"At Tshafutshe SDA Church, we strive to create a Christ-centered learning "
+"environment where every individual is equipped to live according to God's "
+"principles. We believe that education is not just about academic knowledge "
+"but about preparing hearts for service and spiritual growth."
+msgstr ""
+"Kha Kereke ya Tshafutshe SDA, ri lwela u sika vhupo ha u guda ho sedzaho kha"
+" Kristo hune muthu munwe na munwe a vha o lugiselelwa u tshila u ya nga "
+"milayo ya Mudzimu. Ri tenda uri pfunzo a si nḓivho ya zwa pfunzo fhedzi, "
+"fhedzi ndi u lugisela mbilu tshumelo na nyaluwo ya muya."
+
+#: .\templates\security\about.html:120 .\templates\security\index.html:119
+msgid ""
+"Our programs are designed to help individuals discover their God-given "
+"purpose, nurture their spiritual walk, and serve others with love and "
+"humility"
+msgstr ""
+"Mbekanyamushumo dzashu dzo itelwa u thusa muthu nga eṱhe u wana ndivho yawe "
+"ye a ṋewa nga Mudzimu, u ṱahulela u tshimbila hawe ha muya, na u shumela "
+"vhaṅwe nga lufuno na u ḓiṱukufhadza ."
+
+#: .\templates\security\about.html:141 .\templates\security\index.html:140
+msgid "Faith-Focused Learning"
+msgstr "U Guda ho Livhiswaho Kha Lutendo"
+
+#: .\templates\security\about.html:148 .\templates\security\index.html:147
+msgid "Holistic Development"
+msgstr "Mveledziso yo fhelelaho"
+
+#: .\templates\security\about.html:155 .\templates\security\index.html:154
+msgid "Character Building"
+msgstr "U fhaṱa vhumuthu"
+
+#: .\templates\security\about.html:162 .\templates\security\index.html:161
+msgid "Service-Oriented Education"
+msgstr "Pfunzo yo Livhiswaho kha Tshumelo"
+
+#: .\templates\security\about.html:169 .\templates\security\index.html:168
+msgid "Community Engagement"
+msgstr "U dzhenelela ha tshitshavha"
+
+#: .\templates\security\about.html:180 .\templates\security\index.html:179
+msgid "Sabbath Observance"
+msgstr "U Elelwa Sabatha"
+
+#: .\templates\security\about.html:187 .\templates\security\index.html:186
+msgid "God Head"
+msgstr "God Head"
+
+#: .\templates\security\about.html:194 .\templates\security\index.html:193
+msgid "The Great Controversy"
+msgstr "Khanedzano Khulwane "
+
+#: .\templates\security\about.html:201 .\templates\security\index.html:200
+msgid "Christ's Second Coming"
+msgstr "U ḓa ha Kristo lwa vhuvhili"
+
+#: .\templates\security\about.html:208 .\templates\security\index.html:207
+msgid "The Holy Spirit"
+msgstr "Muya Mukhethwa "
 
 #: .\templates\security\index.html:14
 msgid "Welcome to"
@@ -95,26 +414,13 @@ msgstr ""
 "vhurabeli, vhuthihi, u swikelela tshitshavha, na u tshila milaedza ya "
 "vharuṅwa vhararu ."
 
-#: .\templates\security\index.html:19
-msgid "Get Started"
-msgstr "Thomani"
+#: .\tshaweb\settings.py:151
+msgid "English"
+msgstr "Tshiisimane"
 
-#: .\templates\security\index.html:38
-msgid "The Good News of Salvation"
-msgstr "Mafhungo Madifha A U Tshidzwa "
-
-#: .\templates\security\index.html:39
-msgid ""
-"Understanding that salvation is a free gift through Jesus Christ, and "
-"baptism is an expression of our faith in His life, death, and resurrection "
-msgstr ""
-"U pfesesa uri u tshidzwa ndi tshifhiwa tsha mahala nga Yesu Kristo, nahone "
-"ndovhedzo ndi tsumbo ya lutendo lwashu kha vhutshilo hawe, lufu lwawe, na "
-"mvuwo yawe ."
-
-#: .\templates\security\index.html:41
-msgid "Ephesians 2:8-9"
-msgstr "Vha-Efesa 2:8-9"
+#: .\tshaweb\settings.py:152
+msgid "Tshivenda"
+msgstr "Tshivenda"
 
 #: .\venv\Lib\site-packages\django\contrib\messages\apps.py:16
 msgid "Messages"
@@ -1414,43 +1720,6 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\grappelli\dashboard\modules.py:356
 msgid "RSS Feed"
-msgstr ""
-
-#: .\venv\Lib\site-packages\grappelli\dashboard\templates\admin\index.html:25
-#: .\venv\Lib\site-packages\grappelli\templates\admin\500.html:9
-#: .\venv\Lib\site-packages\grappelli\templates\admin\app_index.html:11
-#: .\venv\Lib\site-packages\grappelli\templates\admin\auth\user\change_password.html:7
-#: .\venv\Lib\site-packages\grappelli\templates\admin\base.html:142
-#: .\venv\Lib\site-packages\grappelli\templates\admin\change_form.html:153
-#: .\venv\Lib\site-packages\grappelli\templates\admin\change_list.html:141
-#: .\venv\Lib\site-packages\grappelli\templates\admin\change_list_filter_confirm.html:141
-#: .\venv\Lib\site-packages\grappelli\templates\admin\change_list_filter_confirm_sidebar.html:142
-#: .\venv\Lib\site-packages\grappelli\templates\admin\change_list_filter_sidebar.html:142
-#: .\venv\Lib\site-packages\grappelli\templates\admin\constance\change_list.html:72
-#: .\venv\Lib\site-packages\grappelli\templates\admin\csv_export_selected_confirmation.html:9
-#: .\venv\Lib\site-packages\grappelli\templates\admin\delete_confirmation.html:13
-#: .\venv\Lib\site-packages\grappelli\templates\admin\delete_selected_confirmation.html:13
-#: .\venv\Lib\site-packages\grappelli\templates\admin\index.html:18
-#: .\venv\Lib\site-packages\grappelli\templates\admin\invalid_setup.html:9
-#: .\venv\Lib\site-packages\grappelli\templates\admin\object_history.html:9
-#: .\venv\Lib\site-packages\grappelli\templates\admin_doc\bookmarklets.html:8
-#: .\venv\Lib\site-packages\grappelli\templates\admin_doc\index.html:9
-#: .\venv\Lib\site-packages\grappelli\templates\admin_doc\missing_docutils.html:8
-#: .\venv\Lib\site-packages\grappelli\templates\admin_doc\model_detail.html:20
-#: .\venv\Lib\site-packages\grappelli\templates\admin_doc\model_index.html:23
-#: .\venv\Lib\site-packages\grappelli\templates\admin_doc\template_filter_index.html:25
-#: .\venv\Lib\site-packages\grappelli\templates\admin_doc\template_tag_index.html:27
-#: .\venv\Lib\site-packages\grappelli\templates\admin_doc\view_detail.html:7
-#: .\venv\Lib\site-packages\grappelli\templates\admin_doc\view_index.html:23
-#: .\venv\Lib\site-packages\grappelli\templates\grp_doc\basic_page_structure.html:132
-#: .\venv\Lib\site-packages\grappelli\templates\grp_doc\context_navigation.html:55
-#: .\venv\Lib\site-packages\grappelli\templates\registration\password_change_done.html:6
-#: .\venv\Lib\site-packages\grappelli\templates\registration\password_change_form.html:6
-#: .\venv\Lib\site-packages\grappelli\templates\reversion\recover_form.html:7
-#: .\venv\Lib\site-packages\grappelli\templates\reversion\recover_list.html:6
-#: .\venv\Lib\site-packages\grappelli\templates\reversion\revision_form.html:7
-#: .\venv\Lib\site-packages\grappelli\templates\smuggler\load_data_form.html:24
-msgid "Home"
 msgstr ""
 
 #: .\venv\Lib\site-packages\grappelli\dashboard\templates\grappelli\dashboard\modules\app_list.html:19
