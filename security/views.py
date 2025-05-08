@@ -10,6 +10,7 @@ from django.contrib import messages
 from security.forms import OrderForm
 from security.models import Order, Payment
 from security.pay_utils import get_data_validate
+from tshaweb import settings
 
 def my_view(request):
     output = _("Welcome to ") + "Tshapfutshe SDA Church!"
@@ -171,3 +172,8 @@ def pay_clear(request, pk):
     }
     # return Response(data, )
     return JsonResponse(data=data, safe=False)
+
+def change_language(request, lang_code):
+    translation.activate(lang_code)
+    request.session[translation.LANGUAGE_SESSION_KEY] = lang_code
+    return redirect(request.META.get('HTTP_REFERER', '/'))

@@ -36,5 +36,8 @@ urlpatterns = [
     path('canceled/<str:pk>', views.payment_canceled, name='canceled'),
     path('payment_done/<str:pk>', views.payment_done, name='payment_done'),
     path('pay_clear/<str:pk>', views.pay_clear, name='pay_clear'),
+    # path('payfast_clear/<str:pk>', views.payfast_clear, name='payfast_clear'),
+    # path('payfast_done/<str:pk>', views.payfast_done, name='payfast_done'),
+    path('change_language/<str:lang_code>/', views.change_language, name='change_language'),
 
 ]

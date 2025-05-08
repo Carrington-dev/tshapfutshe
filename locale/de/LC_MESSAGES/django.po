@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-08 15:31+0200\n"
-"PO-Revision-Date: 2025-05-08 15:36+0000\n"
+"POT-Creation-Date: 2025-05-08 15:40+0200\n"
+"PO-Revision-Date: 2025-05-08 15:41+0000\n"
 "Last-Translator: Carrington Muleya <crn96m@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -18,6 +18,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.2\n"
+
+#: .\security\context_processor.py:10
+msgid "Tshapfutshe SDA Church"
+msgstr "Tshapfutshe SDA Church"
+
+#: .\security\context_processor.py:16
+msgid "Home of Faith"
+msgstr "Hayani ha Lutendo"
 
 #: .\security\views.py:15
 msgid "Welcome to "
