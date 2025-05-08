@@ -6,7 +6,7 @@ def show_data(request):
     """
     Context processor to add user data to the context.
     """
-    company = "Tshafutshe SDA Church"
+    company = "Tshapfutshe SDA Church"
     return {
         "company": company,
         "company_title": company,
