@@ -11,7 +11,7 @@ class ForceDefaultLanguageMiddleware:
 
         # If no language code in URL, force redirect to default language (Tshivenda)
         if not language_code or language_code == 'en':  # Adjust if needed
-            return HttpResponseRedirect(f"/ve{request.path}")
+            return HttpResponseRedirect(f"/de{request.path}")
 
         response = self.get_response(request)
         return response
