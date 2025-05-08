@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
-
-{% block title %}{% if title %}{{title}}{% else %}Thrift Experiences{% endif %}{% endblock %}
+{% load i18n %}
+{% block title %}{% if title %}{{title}}{% else %}{{ company }}{% endif %}{% endblock %}
 
 {% block content %}
 
@@ -12,7 +12,7 @@
         <h1 class="mb-2 mb-lg-0">{{ title }}</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="/">Home</a></li>
+            <li><a href="/">{% trans "Home" %}</a></li>
             <li class="current">{{ title }}</li>
           </ol>
         </nav>
@@ -24,8 +24,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p><span>Check Our</span> <span class="description-title">Services</span></p>
+        <h2>{% trans "Services" %}</h2>
+        <p><span>{% trans "Check Our" %}</span> <span class="description-title">{% trans "Services" %}</span></p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -38,26 +38,10 @@
                 <i class="bi bi-activity"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Spiritual Ministries</h3>
+                <h3>{% trans "Spiritual Ministries" %}</h3>
               </a>
               <p>
-                Strengthening spiritual growth and connection with God.
-
-Sabbath Worship Services
-
-Sabbath School (all age groups)
-
-Divine Worship
-
-Afternoon Bible Discussions
-
-Prayer & Fasting Programs
-
-Bible Studies & Baptismal Classes
-
-Evangelistic Campaigns (in-person and online)
-
-Spiritual Counseling & Pastoral Care
+                {% trans "Strengthening spiritual growth and connection with God. Sabbath Worship Services Sabbath School (all age groups) Divine Worship Afternoon Bible Discussions Prayer & Fasting Programs Bible Studies & Baptismal Classes Evangelistic Campaigns (in-person and online) Spiritual Counseling & Pastoral Care" %}
               </p>
             </div>
           </div><!-- End Service Item -->
@@ -68,21 +52,9 @@ Spiritual Counseling & Pastoral Care
                 <i class="bi bi-broadcast"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Community Outreach</h3>
+                <h3>{% trans "Community Outreach" %}</h3>
               </a>
-              <p>Serving our neighbors with love and compassion.
-
-                Food Distribution & Soup Kitchen
-                
-                Clothing & Blanket Drives
-                
-                Community Clean-up Campaigns
-                
-                Support for Orphans & Vulnerable Children
-                
-                Elderly & Home-bound Member Visitation
-                
-                Disaster Relief Services</p>
+              <p>{% trans "Serving our neighbors with love and compassion. Food Distribution & Soup Kitchen                 Clothing & Blanket Drives                 Community Clean-up Campaigns                 Support for Orphans & Vulnerable Children                 Elderly & Home-bound Member Visitation                 Disaster Relief Services" %}</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -92,21 +64,9 @@ Spiritual Counseling & Pastoral Care
                 <i class="bi bi-easel"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3> Education & Academic Support</h3>
+                <h3> {% trans "Education & Academic Support" %}</h3>
               </a>
-              <p>Empowering minds through Christ-centered learning.
-
-                Tutoring Services (all grades and subjects)
-                
-                Study Skills & Exam Prep Workshops
-                
-                Sabbath School for Children & Adults
-                
-                Pathfinder & Adventurer Clubs
-                
-                Teacher Training & Staff Development
-                
-                Life Skills Courses (IT, sewing, cooking, etc.)</p>
+              <p>{% trans "Empowering minds through Christ-centered learning. Tutoring Services (all grades and subjects)                 Study Skills & Exam Prep Workshops                 Sabbath School for Children & Adults                 Pathfinder & Adventurer Clubs                 Teacher Training & Staff Development                Life Skills Courses (IT, sewing, cooking, etc.)" %}</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -116,19 +76,9 @@ Spiritual Counseling & Pastoral Care
                 <i class="bi bi-bounding-box-circles"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Health & Wellness Services</h3>
+                <h3>{% trans "Health & Wellness Services" %}</h3>
               </a>
-              <p>Caring for the body, mind, and soul.
-
-                Free Health Screenings & Clinics
-                
-                Health & Temperance Seminars
-                
-                Mental Health Counseling
-                
-                Fitness & Lifestyle Programs (walkathons, exercise groups)
-                
-                Substance Abuse & Addiction Recovery Support</p>
+              <p>{% trans "Caring for the body, mind, and soul. Free Health Screenings & Clinics Health & Temperance Seminars Mental Health Counseling Fitness & Lifestyle Programs (walkathons, exercise groups) Substance Abuse & Addiction Recovery Support" %}</p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -139,21 +89,9 @@ Spiritual Counseling & Pastoral Care
                 <i class="bi bi-calendar4-week"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Youth & Family Ministries</h3>
+                <h3>{% trans "Youth & Family Ministries" %}</h3>
               </a>
-              <p>Developing strong families and God-fearing youth.
-
-                Youth Leadership & Mentorship Programs
-                
-                Family Enrichment Seminars
-                
-                Parenting Workshops
-                
-                Marriage Counseling & Retreats
-                
-                Children’s Ministry Activities
-                
-                Youth Empowerment Events & Talent Showcases</p>
+              <p>{% trans "Developing strong families and God-fearing youth. Youth Leadership & Mentorship Programs Family Enrichment Seminars Parenting Workshops Marriage Counseling & Retreats Children’s Ministry Activities Youth Empowerment Events & Talent Showcases" %}</p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -164,22 +102,10 @@ Spiritual Counseling & Pastoral Care
                 <i class="bi bi-chat-square-text"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Digital & Media Evangelism</h3>
+                <h3>{% trans "Digital & Media Evangelism" %}</h3>
               </a>
               <p>
-                Spreading the gospel through technology and creativity.
-
-                Online Worship Services & Bible Studies
-
-                Social Media Outreach & Digital Devotionals
-
-                Podcast & Radio Ministry
-
-                Multimedia Content Creation
-
-                Christian Literature Distribution
-
-
+                {% trans "Spreading the gospel through technology and creativity. Online Worship Services & Bible Studies Social Media Outreach & Digital Devotionals Podcast & Radio Ministry Multimedia Content Creation Christian Literature Distribution" %}
               </p>
               <a href="#" class="stretched-link"></a>
             </div>
@@ -192,17 +118,9 @@ Spiritual Counseling & Pastoral Care
                 <i class="bi bi-activity"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Economic Empowerment</h3>
+                <h3>{% trans "Economic Empowerment" %}</h3>
               </a>
-              <p>Equipping members for sustainable livelihoods.
-
-                Financial Literacy Seminars
-                
-                Entrepreneurship & Small Business Training
-                
-                Job Readiness & CV Writing Workshops
-                
-                Business Mentorship & Incubation</p>
+              <p>{% trans "Equipping members for sustainable livelihoods. Financial Literacy Seminars Entrepreneurship & Small Business Training Job Readiness & CV Writing Workshops Business Mentorship & Incubation" %}</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -212,17 +130,9 @@ Spiritual Counseling & Pastoral Care
                 <i class="bi bi-broadcast"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Music & Creative Arts</h3>
+                <h3>{% trans "Music & Creative Arts" %}</h3>
               </a>
-              <p>Using talent to glorify God and inspire others.
-
-                Church Choirs & Music Groups
-                
-                Instrument & Vocal Training Classes
-                
-                Drama & Creative Arts Ministry
-                
-                Youth Gospel Concerts & Performances</p>
+              <p>{% trans "Using talent to glorify God and inspire others. Church Choirs & Music Groups Instrument & Vocal Training Classes Drama & Creative Arts Ministry Youth Gospel Concerts & Performances" %}</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -232,9 +142,9 @@ Spiritual Counseling & Pastoral Care
                 <i class="bi bi-easel"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Feeding souls and stomachs</h3>
+                <h3>{% trans "Feeding souls and stomachs" %}</h3>
               </a>
-              <p>This outreach initiative ensures that no one in our community goes hungry. Through scheduled food deliveries and mobile pantry services, Food on Wills brings nutritious meals and groceries directly to the marginalized.</p>
+              <p>{% trans "This outreach initiative ensures that no one in our community goes hungry. Through scheduled food deliveries and mobile pantry services, Food on Wills brings nutritious meals and groceries directly to the marginalized." %}</p>
             </div>
           </div><!-- End Service Item -->
 

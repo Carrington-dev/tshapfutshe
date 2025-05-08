@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-08 18:55+0200\n"
-"PO-Revision-Date: 2025-05-08 18:56+0000\n"
+"POT-Creation-Date: 2025-05-08 21:05+0200\n"
+"PO-Revision-Date: 2025-05-08 21:08+0000\n"
 "Last-Translator: Carrington Muleya <crn96m@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -37,7 +37,7 @@ msgstr ""
 "Ho vha na vhukhakhi kha zwe vha rumela. Ndi khou humbela uri ni lingedze "
 "hafhu."
 
-#: .\templates\base.html:69
+#: .\templates\base.html:69 .\templates\security\services.html:15
 #: .\venv\Lib\site-packages\grappelli\dashboard\templates\admin\index.html:25
 #: .\venv\Lib\site-packages\grappelli\templates\admin\500.html:9
 #: .\venv\Lib\site-packages\grappelli\templates\admin\app_index.html:11
@@ -80,7 +80,8 @@ msgstr "Hayani"
 msgid "About"
 msgstr "Rine"
 
-#: .\templates\base.html:71
+#: .\templates\base.html:71 .\templates\security\services.html:27
+#: .\templates\security\services.html:28
 msgid "Services"
 msgstr "Tshumelo"
 
@@ -429,6 +430,165 @@ msgstr ""
 "kale. Ro ḓitika nga lutendo lwa Seventh-day Adventist, ro ḓikumedzela kha "
 "vhurabeli, vhuthihi, u swikelela tshitshavha, na u tshila milaedza ya "
 "vharuṅwa vhararu ."
+
+#: .\templates\security\services.html:28
+msgid "Check Our"
+msgstr "Kha vha sedze Yashu"
+
+#: .\templates\security\services.html:41
+#, fuzzy
+#| msgid "Personal Ministries"
+msgid "Spiritual Ministries"
+msgstr "Vhuḓinḓa ha Muthu"
+
+#: .\templates\security\services.html:44
+msgid ""
+"Strengthening spiritual growth and connection with God. Sabbath Worship "
+"Services Sabbath School (all age groups) Divine Worship Afternoon Bible "
+"Discussions Prayer & Fasting Programs Bible Studies & Baptismal Classes "
+"Evangelistic Campaigns (in-person and online) Spiritual Counseling & "
+"Pastoral Care"
+msgstr ""
+"U khwaṱhisa nyaluwo ya muya na vhushaka na Mudzimu. Tshumelo dza Vhurabeli "
+"ha Savhatha Tshikolo tsha Savhatha (miṅwaha yoṱhe) Vhurabeli ha Mudzimu "
+"Nyambedzano dza Bivhili dza masiari Mbekanyamushumo dza Thabelo na u Ḓidzima"
+" zwiḽiwa Pfunzo dza Bivhili na Kiḽasi dza Ndovhedzo Mafulo a Vhuevangeli "
+"(nga muthu nga eṱhe na kha inthanethe) Nyeletshedzo ya Muya na Vhufunzi"
+
+#: .\templates\security\services.html:55
+msgid "Community Outreach"
+msgstr "U swikelela tshitshavha"
+
+#: .\templates\security\services.html:57
+msgid ""
+"Serving our neighbors with love and compassion. Food Distribution & Soup "
+"Kitchen                 Clothing & Blanket Drives                 Community "
+"Clean-up Campaigns                 Support for Orphans & Vulnerable Children"
+"                 Elderly & Home-bound Member Visitation                 "
+"Disaster Relief Services"
+msgstr ""
+"U shumela vhahura vhashu nga lufuno na u pfela vhuṱungu. U Phaḓaladzwa ha "
+"Zwiḽiwa & Swobo Zwiambaro zwa Khishini na Mukumba Zwi Ṱuṱuwedza Mafulo a u "
+"Kunakisa Tshitshavha Thikhedzo ya Vhashai na Vhana vha re Khomboni Vhaaluwa "
+"& Muraḓo wo vhofholowaho hayani U dalela Tshumelo dza u Thusa kha Khombo"
+
+#: .\templates\security\services.html:67
+msgid "Education & Academic Support"
+msgstr "Pfunzo na Thikhedzo ya Akhademiki"
+
+#: .\templates\security\services.html:69
+msgid ""
+"Empowering minds through Christ-centered learning. Tutoring Services (all "
+"grades and subjects)                 Study Skills & Exam Prep Workshops"
+"                 Sabbath School for Children & Adults                 "
+"Pathfinder & Adventurer Clubs                 Teacher Training & Staff "
+"Development                Life Skills Courses (IT, sewing, cooking, etc.)"
+msgstr ""
+"U ṋea maanḓa mihumbulo nga u guda ho sedzaho kha Kristo. Tshumelo dza u "
+"gudisa (gireidi dzoṱhe na thero) Vhutsila ha u guda & Miṱangano ya u "
+"Lugisela Mulingo Tshikolo tsha Savhatha tsha Vhana & Vhaaluwa Pathfinder & "
+"Adventurer Clubs Vhugudisi ha Vhadededzi & Mveledziso ya Vhashumi Khoso dza "
+"Vhutsila ha Vhutshilo (IT, u ruka, u bika, na zwiṅwe-vho)"
+
+#: .\templates\security\services.html:79
+#, fuzzy
+#| msgid "Health and Wholeness"
+msgid "Health & Wellness Services"
+msgstr "Mutakalo na Vhuḓifari ho Fhelelaho"
+
+#: .\templates\security\services.html:81
+msgid ""
+"Caring for the body, mind, and soul. Free Health Screenings & Clinics Health"
+" & Temperance Seminars Mental Health Counseling Fitness & Lifestyle Programs"
+" (walkathons, exercise groups) Substance Abuse & Addiction Recovery Support"
+msgstr ""
+"U ṱhogomela muvhili, muhumbulo, na muya. U ṱoliwa ha Mutakalo ha mahala na "
+"Kiḽiniki Seminara dza Mutakalo na u Ḓifara Nyeletshedzo ya Mutakalo wa "
+"Muhumbulo Mbekanyamushumo dza u Ḓilugisa na Nḓila ya Vhutshilo (walkathons, "
+"zwigwada zwa u ita nyonyoloso) Thikhedzo ya u Shumisa Zwidzidzivhadzi & U "
+"Fhola"
+
+#: .\templates\security\services.html:92
+#, fuzzy
+#| msgid "Youth Ministries"
+msgid "Youth & Family Ministries"
+msgstr "Mihasho ya Vhaswa"
+
+#: .\templates\security\services.html:94
+msgid ""
+"Developing strong families and God-fearing youth. Youth Leadership & "
+"Mentorship Programs Family Enrichment Seminars Parenting Workshops Marriage "
+"Counseling & Retreats Children’s Ministry Activities Youth Empowerment "
+"Events & Talent Showcases"
+msgstr ""
+"U bveledza miṱa yo khwaṱhaho na vhaswa vha ofhaho Mudzimu. Mbekanyamushumo "
+"dza Vhurangaphanḓa ha Vhaswa & Vhueletshedzi Seminara dza u Pfuma ha Muṱa "
+"Miṱangano ya Vhubebi Nyeletshedzo ya Mbingano & Vhudzulo ha Vhudzulo Mishumo"
+" ya Muhasho wa Vhana Zwiitea zwa u Maanḓafhadza Vhaswa & Misumbedzo ya "
+"Talente"
+
+#: .\templates\security\services.html:105
+msgid "Digital & Media Evangelism"
+msgstr "Vhuevangeli ha Didzhithala na Vhuḓivhazwakale"
+
+#: .\templates\security\services.html:108
+msgid ""
+"Spreading the gospel through technology and creativity. Online Worship "
+"Services & Bible Studies Social Media Outreach & Digital Devotionals Podcast"
+" & Radio Ministry Multimedia Content Creation Christian Literature "
+"Distribution"
+msgstr ""
+"U phaḓaladza mafhungo madifha nga thekinolodzhi na vhusiki. Tshumelo dza "
+"Vhurabeli ha Inthanethe & Pfunzo dza Bivhili U Swika Vhathu kha "
+"Nyanḓadzamafhungo ya Matshilisano na Vhurabeli ha Didzhithala Vhuḓinḓa ha "
+"Podcast & Radio U sika Zwi re Ngomu ha Nyanḓadzamafhungo Nnzhi U Phaḓaladza "
+"Maṅwalo a Vhukriste"
+
+#: .\templates\security\services.html:121
+msgid "Economic Empowerment"
+msgstr "U Manḓafhadzwa ha Ikonomi"
+
+#: .\templates\security\services.html:123
+msgid ""
+"Equipping members for sustainable livelihoods. Financial Literacy Seminars "
+"Entrepreneurship & Small Business Training Job Readiness & CV Writing "
+"Workshops Business Mentorship & Incubation"
+msgstr ""
+"U ṋetshedza miraḓo zwishumiswa zwa u ḓitshidza zwi bveledzaho. Seminara dza "
+"Vhugudisi ha zwa Masheleni Vhubindudzi & Vhugudisi ha Mabindu Maṱuku U "
+"Lugela Mushumo & Miṱangano ya u Ṅwala CV Vhueletshedzi ha Mabindu & U "
+"Ṱuṱuwedza"
+
+#: .\templates\security\services.html:133
+msgid "Music & Creative Arts"
+msgstr "Muzika na Vhutsila ha Vhusiki"
+
+#: .\templates\security\services.html:135
+msgid ""
+"Using talent to glorify God and inspire others. Church Choirs & Music Groups"
+" Instrument & Vocal Training Classes Drama & Creative Arts Ministry Youth "
+"Gospel Concerts & Performances"
+msgstr ""
+"U shumisa talente u hulisa Mudzimu na u ṱuṱuwedza vhaṅwe. Khoiri dza Kereke "
+"& Zwigwada zwa Muzika Kiḽasi dza u Gudisa Zwilidzo na Maipfi Ḓirama na "
+"Vhutsila ha Vhusiki Muhasho wa Vhaswa Khontsathi dza Mafhungo Maḓifha na "
+"Mitambo"
+
+#: .\templates\security\services.html:145
+msgid "Feeding souls and stomachs"
+msgstr "U fusha mimuya na thumbu ."
+
+#: .\templates\security\services.html:147
+msgid ""
+"This outreach initiative ensures that no one in our community goes hungry. "
+"Through scheduled food deliveries and mobile pantry services, Food on Wills "
+"brings nutritious meals and groceries directly to the marginalized."
+msgstr ""
+"Vhukando uhu ha u swikelela vhathu vhu khwaṱhisedza uri a hu na muthu "
+"tshitshavhani tshashu ane a fa nga nḓala. Nga kha u ḓiswa ha zwiḽiwa zwo "
+"dzudzanywaho na tshumelo dza u vhulunga zwiḽiwa dzi tshimbilaho, Food on "
+"Wills i ḓisa zwiḽiwa zwi re na pfushi na zwiḽiwa zwa u rengisa thwii kha "
+"vhane vha khou ṱutshelwa."
 
 #: .\tshaweb\settings.py:151
 msgid "English"
