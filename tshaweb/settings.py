@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'security',  # Custom security app
+    'rosetta',  # For translation management
 ]
 
 MIDDLEWARE = [
@@ -148,7 +149,7 @@ USE_I18N = True
 
 LANGUAGES = [
     ('en', 'English'),
-    ('ve', 'Tshivenda'),
+    ('de', 'Tshivenda'),
 ]
 
 LOCALE_PATHS = [

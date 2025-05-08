@@ -19,8 +19,8 @@ urlpatterns = [
 
 urlpatterns += i18n_patterns(
     path('grappelli/', include('grappelli.urls')),
-
     path('admin/', admin.site.urls),
+    path('rosetta/', include('rosetta.urls')),
     path('', include('security.urls')),  # Include the security app URLs
     
 )
