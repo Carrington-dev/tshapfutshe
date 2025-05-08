@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-08 21:05+0200\n"
-"PO-Revision-Date: 2025-05-08 21:08+0000\n"
+"POT-Creation-Date: 2025-05-08 21:15+0200\n"
+"PO-Revision-Date: 2025-05-08 21:17+0000\n"
 "Last-Translator: Carrington Muleya <crn96m@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -110,8 +110,6 @@ msgid "Personal Ministries"
 msgstr "Vhuḓinḓa ha Muthu"
 
 #: .\templates\base.html:79
-#, fuzzy
-#| msgid "Syndication"
 msgid "Education"
 msgstr "Ṱhuṱhuwedzo"
 
@@ -135,7 +133,8 @@ msgstr "Thabelo"
 msgid "Music"
 msgstr "Muzika"
 
-#: .\templates\base.html:87
+#: .\templates\base.html:87 .\templates\security\portfolio.html:14
+#: .\templates\security\portfolio.html:15
 msgid "Portfolio"
 msgstr "Phothifoḽio"
 
@@ -431,13 +430,28 @@ msgstr ""
 "vhurabeli, vhuthihi, u swikelela tshitshavha, na u tshila milaedza ya "
 "vharuṅwa vhararu ."
 
+#: .\templates\security\portfolio.html:15
 #: .\templates\security\services.html:28
 msgid "Check Our"
 msgstr "Kha vha sedze Yashu"
 
+#: .\templates\security\portfolio.html:23
+msgid "All"
+msgstr "Zwoṱhe"
+
+#: .\templates\security\portfolio.html:24
+msgid "Church"
+msgstr "Kereke"
+
+#: .\templates\security\portfolio.html:25
+msgid "Play"
+msgstr "Ḽitangwa"
+
+#: .\templates\security\portfolio.html:26
+msgid "Plan"
+msgstr "Pulane"
+
 #: .\templates\security\services.html:41
-#, fuzzy
-#| msgid "Personal Ministries"
 msgid "Spiritual Ministries"
 msgstr "Vhuḓinḓa ha Muthu"
 
@@ -491,8 +505,6 @@ msgstr ""
 "Vhutsila ha Vhutshilo (IT, u ruka, u bika, na zwiṅwe-vho)"
 
 #: .\templates\security\services.html:79
-#, fuzzy
-#| msgid "Health and Wholeness"
 msgid "Health & Wellness Services"
 msgstr "Mutakalo na Vhuḓifari ho Fhelelaho"
 
@@ -509,8 +521,6 @@ msgstr ""
 "Fhola"
 
 #: .\templates\security\services.html:92
-#, fuzzy
-#| msgid "Youth Ministries"
 msgid "Youth & Family Ministries"
 msgstr "Mihasho ya Vhaswa"
 
