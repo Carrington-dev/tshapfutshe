@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-08 21:15+0200\n"
+"POT-Creation-Date: 2025-05-08 21:21+0200\n"
 "PO-Revision-Date: 2025-05-08 21:17+0000\n"
 "Last-Translator: Carrington Muleya <crn96m@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -138,7 +138,7 @@ msgstr "Muzika"
 msgid "Portfolio"
 msgstr "Phothifoḽio"
 
-#: .\templates\base.html:89
+#: .\templates\base.html:89 .\templates\security\contact.html:11
 msgid "Contact"
 msgstr "Khwamano"
 
@@ -183,17 +183,17 @@ msgstr "Vhashumisani vhashu"
 msgid ""
 "Stay spiritually connected with Tshafutshe SDA Church. Be the first to know "
 "about upcoming services, community events, outreach programs, and inspiring "
-"testimonies. Join us online as we grow together in faith, love, and purpose."
-" Your next blessing, message, or moment of inspiration is just one click "
+"testimonies. Join us online as we grow together in faith, love, and purpose. "
+"Your next blessing, message, or moment of inspiration is just one click "
 "away. Follow us on social media and walk with us on this journey of faith"
 msgstr ""
 "Dzulani no kwamana muyani na Kereke ya Tshafutshe SDA. Ivhani vha u thoma u "
 "ḓivha nga ha tshumelo dzine dza khou ḓa, zwiitea zwa tshitshavha, "
-"mbekanyamushumo dza u swikelela vhathu, na vhuṱanzi vhu ṱuṱuwedzaho. Kha vha"
-" ri dzhoine kha inthanethe musi ri tshi khou aluwa roṱhe kha lutendo, "
-"lufuno, na ndivho. Phaṱhutshedzo yaṋu i tevhelaho, mulaedza, kana tshifhinga"
-" tsha u ṱuṱuwedzwa zwi tou vha kule nga u tou ṋanga luthihi. Ri tevheleni "
-"kha social media ni tshimbile na rine kha holu lwendo lwa lutendo"
+"mbekanyamushumo dza u swikelela vhathu, na vhuṱanzi vhu ṱuṱuwedzaho. Kha vha "
+"ri dzhoine kha inthanethe musi ri tshi khou aluwa roṱhe kha lutendo, lufuno, "
+"na ndivho. Phaṱhutshedzo yaṋu i tevhelaho, mulaedza, kana tshifhinga tsha u "
+"ṱuṱuwedzwa zwi tou vha kule nga u tou ṋanga luthihi. Ri tevheleni kha social "
+"media ni tshimbile na rine kha holu lwendo lwa lutendo"
 
 #: .\templates\donations\donate.html:14
 msgid "His"
@@ -209,8 +209,8 @@ msgstr "Lutendo"
 
 #: .\templates\security\about.html:16
 msgid ""
-"Seventh-day Adventist beliefs are meant to permeate your whole life. Growing"
-" out of scriptures that paint a compelling portrait of God, you are invited "
+"Seventh-day Adventist beliefs are meant to permeate your whole life. Growing "
+"out of scriptures that paint a compelling portrait of God, you are invited "
 "to explore, experience and know the One who desires to make us whole"
 msgstr ""
 "Lutendo lwa Vha-Adventist vha Ḓuvha ḽa Vhusumbe lwo itelwa u dzhena "
@@ -250,8 +250,8 @@ msgid ""
 "spiritual growth and commitment to God's commandments"
 msgstr ""
 "U ṱanganedza Savhatha ya Ḓuvha ḽa Vhusumbe sa ḓuvha ḽa u awela, vhurabeli, "
-"na vhushaka ha muthu nga eṱhe na Mudzimu. Ri do sedzulusa mushumo wa Sabatha"
-" kha nyaluwo yavho ya muya na u dikumedza kha ndaela dza Mudzimu ."
+"na vhushaka ha muthu nga eṱhe na Mudzimu. Ri do sedzulusa mushumo wa Sabatha "
+"kha nyaluwo yavho ya muya na u dikumedza kha ndaela dza Mudzimu ."
 
 #: .\templates\security\about.html:57 .\templates\security\index.html:56
 msgid "Living the Adventist Message"
@@ -265,8 +265,7 @@ msgid ""
 msgstr ""
 "U ṱoḓisisa Milaedza ya Vharuṅwa Vhararu ya Nzumbululo 14, ine ya ri vhidza "
 "uri ri gwadamele Mudzimu, ri tshile nga lutendo, na u kovhelana mafhungo "
-"madifha na shango, zwihuluhulu musi ro lindela u vhuya ha Kristo hu si kale "
-"."
+"madifha na shango, zwihuluhulu musi ro lindela u vhuya ha Kristo hu si kale ."
 
 #: .\templates\security\about.html:67 .\templates\security\index.html:66
 msgid "Health and Wholeness"
@@ -298,19 +297,19 @@ msgstr "Ni tanganedze kha Muhasho wa Pfunzo wa Kereke ya Tshafutshe SDA"
 #: .\templates\security\about.html:99 .\templates\security\index.html:98
 msgid ""
 "At Tshafutshe SDA Church, we offer a holistic educational experience where "
-"spiritual growth is just as important as academic development. Guided by our"
-" faith in Jesus Christ, we believe that education should nurture the whole "
-"person—socially, emotionally, physically, mentally, and spiritually. Through"
-" our dynamic programs, we aim to help our students grow in faith, wisdom, "
-"and service to others"
+"spiritual growth is just as important as academic development. Guided by our "
+"faith in Jesus Christ, we believe that education should nurture the whole "
+"person—socially, emotionally, physically, mentally, and spiritually. Through "
+"our dynamic programs, we aim to help our students grow in faith, wisdom, and "
+"service to others"
 msgstr ""
-"Kha kereke ya Tshafutshe SDA, ri ṋetshedza tshenzhemo ya pfunzo yo fhelelaho"
-" hune nyaluwo ya muya ya vha ya ndeme u fana na mveledziso ya zwa pfunzo. Ri"
-" tshi livhiswa nga lutendo lwashu kha Yesu Kristo, ri tenda uri pfunzo i "
+"Kha kereke ya Tshafutshe SDA, ri ṋetshedza tshenzhemo ya pfunzo yo fhelelaho "
+"hune nyaluwo ya muya ya vha ya ndeme u fana na mveledziso ya zwa pfunzo. Ri "
+"tshi livhiswa nga lutendo lwashu kha Yesu Kristo, ri tenda uri pfunzo i "
 "fanela u alusa muthu oṱhe—kha matshilisano, maḓipfele, ṋamani, muhumbuloni, "
 "na muyani. Nga mbekanyamushumo dzashu dzi re na maanḓa, ri ṱoḓa u thusa "
-"vhagudiswa vhashu uri vha aluwe kha lutendo, vhuṱali, na tshumelo kha vhaṅwe"
-" ."
+"vhagudiswa vhashu uri vha aluwe kha lutendo, vhuṱali, na tshumelo kha "
+"vhaṅwe ."
 
 #: .\templates\security\about.html:104 .\templates\security\index.html:103
 msgid "The Great Commission"
@@ -323,8 +322,8 @@ msgid ""
 "things whatsoever I have commanded you: and, lo, I am with you alway, even "
 "unto the end of the world."
 msgstr ""
-"Iyani-ha ni ite tshakha dzoṱhe vhafunziwa vhanga, ni vha lovhedze dzinani ḽa"
-" Khotsi na ḽa Murwa na ḽa Muya Mukhethwa, ni vha funze u ita zwoṱhe zwe nda "
+"Iyani-ha ni ite tshakha dzoṱhe vhafunziwa vhanga, ni vha lovhedze dzinani ḽa "
+"Khotsi na ḽa Murwa na ḽa Muya Mukhethwa, ni vha funze u ita zwoṱhe zwe nda "
 "ni laya."
 
 #: .\templates\security\about.html:105 .\templates\security\index.html:104
@@ -342,8 +341,8 @@ msgid ""
 "principles. We believe that education is not just about academic knowledge "
 "but about preparing hearts for service and spiritual growth."
 msgstr ""
-"Kha Kereke ya Tshafutshe SDA, ri lwela u sika vhupo ha u guda ho sedzaho kha"
-" Kristo hune muthu munwe na munwe a vha o lugiselelwa u tshila u ya nga "
+"Kha Kereke ya Tshafutshe SDA, ri lwela u sika vhupo ha u guda ho sedzaho kha "
+"Kristo hune muthu munwe na munwe a vha o lugiselelwa u tshila u ya nga "
 "milayo ya Mudzimu. Ri tenda uri pfunzo a si nḓivho ya zwa pfunzo fhedzi, "
 "fhedzi ndi u lugisela mbilu tshumelo na nyaluwo ya muya."
 
@@ -413,6 +412,64 @@ msgstr "Awara Dza Thikhedzo"
 msgid "Board Members"
 msgstr "Mirado ya Bodo"
 
+#: .\templates\security\contact.html:12
+msgid "Need Help?"
+msgstr ""
+
+#: .\templates\security\contact.html:12
+#, fuzzy
+#| msgid "Contact"
+msgid "Contact Us"
+msgstr "Khwamano"
+
+#: .\templates\security\contact.html:25
+msgid "Address"
+msgstr ""
+
+#: .\templates\security\contact.html:33
+msgid "Call Us"
+msgstr ""
+
+#: .\templates\security\contact.html:41
+#, fuzzy
+#| msgid "Email"
+msgid "Email Us"
+msgstr "Imeili"
+
+#: .\templates\security\contact.html:61
+msgid "Your Name"
+msgstr ""
+
+#: .\templates\security\contact.html:66
+#, fuzzy
+#| msgid "Email"
+msgid "Your Email"
+msgstr "Imeili"
+
+#: .\templates\security\contact.html:71
+msgid "Subject"
+msgstr ""
+
+#: .\templates\security\contact.html:76
+#, fuzzy
+#| msgid "Messages"
+msgid "Message"
+msgstr "Milaedza"
+
+#: .\templates\security\contact.html:81
+msgid "Loading"
+msgstr ""
+
+#: .\templates\security\contact.html:83
+msgid "Your message has been sent. Thank you!"
+msgstr ""
+
+#: .\templates\security\contact.html:85
+#, fuzzy
+#| msgid "Messages"
+msgid "Send Message"
+msgstr "Milaedza"
+
 #: .\templates\security\index.html:14
 msgid "Welcome to"
 msgstr "Vho ṱanganedzwa kha"
@@ -420,8 +477,8 @@ msgstr "Vho ṱanganedzwa kha"
 #: .\templates\security\index.html:16
 msgid ""
 "We are a community of believers who love Jesus, honor the Bible as God's "
-"Word, and eagerly await His soon return. Rooted in the Seventh-day Adventist"
-" faith, we are committed to worship, fellowship, community outreach, and "
+"Word, and eagerly await His soon return. Rooted in the Seventh-day Adventist "
+"faith, we are committed to worship, fellowship, community outreach, and "
 "living out the three angels' messages"
 msgstr ""
 "Ri tshitshavha tsha vhatendi vhane vha funa Yesu, vhane vha hulisa Bivhili "
@@ -430,8 +487,7 @@ msgstr ""
 "vhurabeli, vhuthihi, u swikelela tshitshavha, na u tshila milaedza ya "
 "vharuṅwa vhararu ."
 
-#: .\templates\security\portfolio.html:15
-#: .\templates\security\services.html:28
+#: .\templates\security\portfolio.html:15 .\templates\security\services.html:28
 msgid "Check Our"
 msgstr "Kha vha sedze Yashu"
 
@@ -465,9 +521,9 @@ msgid ""
 msgstr ""
 "U khwaṱhisa nyaluwo ya muya na vhushaka na Mudzimu. Tshumelo dza Vhurabeli "
 "ha Savhatha Tshikolo tsha Savhatha (miṅwaha yoṱhe) Vhurabeli ha Mudzimu "
-"Nyambedzano dza Bivhili dza masiari Mbekanyamushumo dza Thabelo na u Ḓidzima"
-" zwiḽiwa Pfunzo dza Bivhili na Kiḽasi dza Ndovhedzo Mafulo a Vhuevangeli "
-"(nga muthu nga eṱhe na kha inthanethe) Nyeletshedzo ya Muya na Vhufunzi"
+"Nyambedzano dza Bivhili dza masiari Mbekanyamushumo dza Thabelo na u Ḓidzima "
+"zwiḽiwa Pfunzo dza Bivhili na Kiḽasi dza Ndovhedzo Mafulo a Vhuevangeli (nga "
+"muthu nga eṱhe na kha inthanethe) Nyeletshedzo ya Muya na Vhufunzi"
 
 #: .\templates\security\services.html:55
 msgid "Community Outreach"
@@ -477,9 +533,9 @@ msgstr "U swikelela tshitshavha"
 msgid ""
 "Serving our neighbors with love and compassion. Food Distribution & Soup "
 "Kitchen                 Clothing & Blanket Drives                 Community "
-"Clean-up Campaigns                 Support for Orphans & Vulnerable Children"
-"                 Elderly & Home-bound Member Visitation                 "
-"Disaster Relief Services"
+"Clean-up Campaigns                 Support for Orphans & Vulnerable "
+"Children                 Elderly & Home-bound Member "
+"Visitation                 Disaster Relief Services"
 msgstr ""
 "U shumela vhahura vhashu nga lufuno na u pfela vhuṱungu. U Phaḓaladzwa ha "
 "Zwiḽiwa & Swobo Zwiambaro zwa Khishini na Mukumba Zwi Ṱuṱuwedza Mafulo a u "
@@ -493,10 +549,11 @@ msgstr "Pfunzo na Thikhedzo ya Akhademiki"
 #: .\templates\security\services.html:69
 msgid ""
 "Empowering minds through Christ-centered learning. Tutoring Services (all "
-"grades and subjects)                 Study Skills & Exam Prep Workshops"
-"                 Sabbath School for Children & Adults                 "
-"Pathfinder & Adventurer Clubs                 Teacher Training & Staff "
-"Development                Life Skills Courses (IT, sewing, cooking, etc.)"
+"grades and subjects)                 Study Skills & Exam Prep "
+"Workshops                 Sabbath School for Children & "
+"Adults                 Pathfinder & Adventurer Clubs                 Teacher "
+"Training & Staff Development                Life Skills Courses (IT, sewing, "
+"cooking, etc.)"
 msgstr ""
 "U ṋea maanḓa mihumbulo nga u guda ho sedzaho kha Kristo. Tshumelo dza u "
 "gudisa (gireidi dzoṱhe na thero) Vhutsila ha u guda & Miṱangano ya u "
@@ -510,9 +567,9 @@ msgstr "Mutakalo na Vhuḓifari ho Fhelelaho"
 
 #: .\templates\security\services.html:81
 msgid ""
-"Caring for the body, mind, and soul. Free Health Screenings & Clinics Health"
-" & Temperance Seminars Mental Health Counseling Fitness & Lifestyle Programs"
-" (walkathons, exercise groups) Substance Abuse & Addiction Recovery Support"
+"Caring for the body, mind, and soul. Free Health Screenings & Clinics Health "
+"& Temperance Seminars Mental Health Counseling Fitness & Lifestyle Programs "
+"(walkathons, exercise groups) Substance Abuse & Addiction Recovery Support"
 msgstr ""
 "U ṱhogomela muvhili, muhumbulo, na muya. U ṱoliwa ha Mutakalo ha mahala na "
 "Kiḽiniki Seminara dza Mutakalo na u Ḓifara Nyeletshedzo ya Mutakalo wa "
@@ -533,9 +590,8 @@ msgid ""
 msgstr ""
 "U bveledza miṱa yo khwaṱhaho na vhaswa vha ofhaho Mudzimu. Mbekanyamushumo "
 "dza Vhurangaphanḓa ha Vhaswa & Vhueletshedzi Seminara dza u Pfuma ha Muṱa "
-"Miṱangano ya Vhubebi Nyeletshedzo ya Mbingano & Vhudzulo ha Vhudzulo Mishumo"
-" ya Muhasho wa Vhana Zwiitea zwa u Maanḓafhadza Vhaswa & Misumbedzo ya "
-"Talente"
+"Miṱangano ya Vhubebi Nyeletshedzo ya Mbingano & Vhudzulo ha Vhudzulo Mishumo "
+"ya Muhasho wa Vhana Zwiitea zwa u Maanḓafhadza Vhaswa & Misumbedzo ya Talente"
 
 #: .\templates\security\services.html:105
 msgid "Digital & Media Evangelism"
@@ -544,8 +600,8 @@ msgstr "Vhuevangeli ha Didzhithala na Vhuḓivhazwakale"
 #: .\templates\security\services.html:108
 msgid ""
 "Spreading the gospel through technology and creativity. Online Worship "
-"Services & Bible Studies Social Media Outreach & Digital Devotionals Podcast"
-" & Radio Ministry Multimedia Content Creation Christian Literature "
+"Services & Bible Studies Social Media Outreach & Digital Devotionals Podcast "
+"& Radio Ministry Multimedia Content Creation Christian Literature "
 "Distribution"
 msgstr ""
 "U phaḓaladza mafhungo madifha nga thekinolodzhi na vhusiki. Tshumelo dza "
@@ -575,8 +631,8 @@ msgstr "Muzika na Vhutsila ha Vhusiki"
 
 #: .\templates\security\services.html:135
 msgid ""
-"Using talent to glorify God and inspire others. Church Choirs & Music Groups"
-" Instrument & Vocal Training Classes Drama & Creative Arts Ministry Youth "
+"Using talent to glorify God and inspire others. Church Choirs & Music Groups "
+"Instrument & Vocal Training Classes Drama & Creative Arts Ministry Youth "
 "Gospel Concerts & Performances"
 msgstr ""
 "U shumisa talente u hulisa Mudzimu na u ṱuṱuwedza vhaṅwe. Khoiri dza Kereke "
@@ -671,8 +727,8 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\core\validators.py:297
 msgid ""
-"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or"
-" hyphens."
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\core\validators.py:309
@@ -884,15 +940,15 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1562
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
-"HH:MM[:ss[.uuuuuu]][TZ] format."
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1570
 #, python-format
 msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD "
-"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1575
@@ -911,8 +967,8 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1864
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in [DD] "
-"[[HH:]MM:]ss[.uuuuuu] format."
+"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
+"uuuuuu] format."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1868
@@ -1071,8 +1127,7 @@ msgid "Many-to-many relationship"
 msgstr ""
 
 #. Translators: If found as last label character, these punctuation
-#. characters will prevent the default label_suffix to be appended to the
-#. label
+#. characters will prevent the default label_suffix to be appended to the label
 #: .\venv\Lib\site-packages\django\forms\boundfield.py:185
 msgid ":?.!"
 msgstr ""
@@ -1122,8 +1177,7 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:644
 #, python-format
-msgid ""
-"Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
 msgid_plural ""
 "Ensure this filename has at most %(max)d characters (it has %(length)d)."
 msgstr[0] ""
@@ -1233,8 +1287,7 @@ msgid "The inline value did not match the parent instance."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\models.py:1450
-msgid ""
-"Select a valid choice. That choice is not one of the available choices."
+msgid "Select a valid choice. That choice is not one of the available choices."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\models.py:1594
@@ -1697,10 +1750,10 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:45
 msgid ""
-"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or"
-" including the “Referrer-Policy: no-referrer” header, please remove them. "
-"The CSRF protection requires the “Referer” header to do strict referer "
-"checking. If you’re concerned about privacy, use alternatives like <a "
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a "
 "rel=\"noreferrer\" …> for links to third-party sites."
 msgstr ""
 
@@ -1752,8 +1805,8 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:680
 #, python-format
 msgid ""
-"Future %(verbose_name_plural)s not available because "
-"%(class_name)s.allow_future is False."
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:720
@@ -1811,10 +1864,10 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:208
 #, python-format
 msgid ""
-"You are seeing this page because <a "
-"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
-"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> is in your settings file "
-"and you have not configured any URLs."
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:217
@@ -1944,8 +1997,8 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\grappelli\templates\admin\500.html:20
 msgid ""
-"There's been an error. It's been reported to the site administrators via "
-"e-mail and should be fixed shortly. Thanks for your patience."
+"There's been an error. It's been reported to the site administrators via e-"
+"mail and should be fixed shortly. Thanks for your patience."
 msgstr ""
 
 #: .\venv\Lib\site-packages\grappelli\templates\admin\actions.html:4
@@ -2160,8 +2213,8 @@ msgstr ""
 #: .\venv\Lib\site-packages\grappelli\templates\admin\delete_confirmation.html:37
 #, python-format
 msgid ""
-"Deleting the %(object_name)s '%(escaped_object)s' would require deleting the"
-" following protected related objects:"
+"Deleting the %(object_name)s '%(escaped_object)s' would require deleting the "
+"following protected related objects:"
 msgstr ""
 
 #: .\venv\Lib\site-packages\grappelli\templates\admin\delete_confirmation.html:47
@@ -2274,9 +2327,9 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\grappelli\templates\admin\invalid_setup.html:16
 msgid ""
-"Something's wrong with your database installation. Make sure the appropriate"
-" database tables have been created, and make sure the database is readable "
-"by the appropriate user."
+"Something's wrong with your database installation. Make sure the appropriate "
+"database tables have been created, and make sure the database is readable by "
+"the appropriate user."
 msgstr ""
 
 #: .\venv\Lib\site-packages\grappelli\templates\admin\login.html:26
@@ -2311,8 +2364,8 @@ msgstr ""
 #: .\venv\Lib\site-packages\grappelli\templates\admin\object_history.html:42
 #: .\venv\Lib\site-packages\grappelli\templates\reversion\object_history.html:36
 msgid ""
-"This object doesn't have a change history. It probably wasn't added via this"
-" admin site."
+"This object doesn't have a change history. It probably wasn't added via this "
+"admin site."
 msgstr ""
 
 #: .\venv\Lib\site-packages\grappelli\templates\admin\pagination.html:9
@@ -2395,10 +2448,14 @@ msgstr ""
 msgid ""
 "\n"
 "            <p>To install bookmarklets, drag the link to your bookmarks\n"
-"    toolbar, or right-click the link and add it to your bookmarks. Now you can\n"
-"    select the bookmarklet from any page in the site.  Note that some of these\n"
-"    bookmarklets require you to be viewing the site from a computer designated\n"
-"    as \"internal\" (talk to your system administrator if you aren't sure if\n"
+"    toolbar, or right-click the link and add it to your bookmarks. Now you "
+"can\n"
+"    select the bookmarklet from any page in the site.  Note that some of "
+"these\n"
+"    bookmarklets require you to be viewing the site from a computer "
+"designated\n"
+"    as \"internal\" (talk to your system administrator if you aren't sure "
+"if\n"
 "    your computer is \"internal\").</p>\n"
 "        "
 msgstr ""
@@ -2457,8 +2514,8 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\grappelli\templates\registration\password_change_form.html:18
 msgid ""
-"Please enter your old password, for security's sake, and then enter your new"
-" password twice so we can verify you typed it in correctly."
+"Please enter your old password, for security's sake, and then enter your new "
+"password twice so we can verify you typed it in correctly."
 msgstr ""
 
 #: .\venv\Lib\site-packages\grappelli\templates\registration\password_change_form.html:23
