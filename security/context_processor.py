@@ -17,7 +17,6 @@ def show_data(request):
         "phone": '+27 (0) 67 735 2242',
         "title": _('Home of Faith'),
         "PAYPAL_CLIENT_ID": config("PAYPAL_CLIENT_ID"),
-        "keywords": 'Muṱa wa Lutendo wa Tshafutshe',
         "email": 'hello@tshapfutshesda.co.zw',
         "shop_email": 'uniforms@tshapfutshesda.co.zw',
         "address": f"{company}</p><p>Beitbridge MS, ZW160101</p><p>Zimbabwe",

@@ -12,9 +12,6 @@ from security.models import Order, Payment
 from security.pay_utils import get_data_validate
 from tshaweb import settings
 
-def my_view(request):
-    output = _("Welcome to ") + "Tshapfutshe SDA Church!"
-    return HttpResponse(output)
 
 def index(request):
     return render(request, 'security/index.html')
