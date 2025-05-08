@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-08 18:52+0200\n"
-"PO-Revision-Date: 2025-05-08 18:53+0000\n"
+"POT-Creation-Date: 2025-05-08 18:55+0200\n"
+"PO-Revision-Date: 2025-05-08 18:56+0000\n"
 "Last-Translator: Carrington Muleya <crn96m@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -398,20 +398,20 @@ msgid "The Holy Spirit"
 msgstr "Muya Mukhethwa "
 
 #: .\templates\security\about.html:235
-msgid "Happy Clients"
-msgstr ""
+msgid "Happy Neighboors"
+msgstr "Vhahura vho takalaho"
 
 #: .\templates\security\about.html:243
 msgid "Members"
-msgstr ""
+msgstr "Mirado"
 
 #: .\templates\security\about.html:251
 msgid "Hours Of Support"
-msgstr ""
+msgstr "Awara Dza Thikhedzo"
 
 #: .\templates\security\about.html:259
 msgid "Board Members"
-msgstr ""
+msgstr "Mirado ya Bodo"
 
 #: .\templates\security\index.html:14
 msgid "Welcome to"
