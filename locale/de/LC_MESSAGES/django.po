@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-08 18:34+0200\n"
-"PO-Revision-Date: 2025-05-08 18:39+0000\n"
+"PO-Revision-Date: 2025-05-08 18:41+0000\n"
 "Last-Translator: Carrington Muleya <crn96m@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -383,7 +383,7 @@ msgstr "U Elelwa Sabatha"
 
 #: .\templates\security\about.html:187 .\templates\security\index.html:186
 msgid "God Head"
-msgstr "God Head"
+msgstr "Mudzimu Thoho"
 
 #: .\templates\security\about.html:194 .\templates\security\index.html:193
 msgid "The Great Controversy"
