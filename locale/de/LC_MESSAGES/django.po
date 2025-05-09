@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-08 21:34+0200\n"
-"PO-Revision-Date: 2025-05-08 21:26+0000\n"
+"POT-Creation-Date: 2025-05-09 07:50+0200\n"
+"PO-Revision-Date: 2025-05-09 07:49+0000\n"
 "Last-Translator: Carrington Muleya <crn96m@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -26,6 +26,58 @@ msgstr "Tshapfutshe SDA Church"
 #: .\security\context_processor.py:18
 msgid "Home of Faith"
 msgstr "Hayani ha Lutendo"
+
+#: .\security\forms.py:25
+#, fuzzy
+#| msgid "Your Name"
+msgid "First Name"
+msgstr "Dzina Lanu"
+
+#: .\security\forms.py:26
+msgid "Last Name"
+msgstr "Tshifani"
+
+#: .\security\forms.py:27
+msgid "Email Address"
+msgstr "Ḓiresi ya Imeiḽi"
+
+#: .\security\forms.py:28
+msgid "Country"
+msgstr "Shango"
+
+#: .\security\forms.py:29
+msgid "Phone Number"
+msgstr "Nomboro ya Luṱingo"
+
+#: .\security\forms.py:30
+msgid "Order Total"
+msgstr "Oda yoṱhe"
+
+#: .\security\forms.py:31
+msgid "Payment Method"
+msgstr "Nḓila ya mbadelo"
+
+#: .\security\forms.py:32
+msgid "State"
+msgstr "Vunḓu"
+
+#: .\security\forms.py:33
+msgid "City"
+msgstr "Ḓorobo"
+
+#: .\security\forms.py:34
+#, fuzzy
+#| msgid "Your Name"
+msgid "Street Name"
+msgstr "Dzina Lanu"
+
+#: .\security\forms.py:35
+msgid "Zip Code"
+msgstr "Khoudu ya Poswo"
+
+#: .\security\forms.py:36
+msgid "Short Description"
+msgstr "Ṱhalutshedzo pfufhi"
 
 #: .\security\views.py:108
 msgid "There was an error with your submission. Please try again."
