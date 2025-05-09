@@ -11,12 +11,12 @@
     <div class="container">
         <div class="row gy-4">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-            <h1>{% trans "His" %} <span>Promises</span></h1>
+            <h1>{% trans "His" %} <span>{% trans "Promises" %}</span></h1>
             <p>
-                God is so good to us and promises to be our shelter even during difficult times! Even though His blessings involve far more than a financial income, He only expects us to bring Him tithes and Promises (regular/systematic offerings) after He blesses us first (read the complete statement here).
+                {% trans "God is so good to us and promises to be our shelter even during difficult times! Even though His blessings involve far more than a financial income, He only expects us to bring Him tithes and Promises (regular/systematic offerings) after He blesses us first (read the complete statement here)" %}.
             </p>
             <div class="d-flex">
-            <a href="#about" class="btn-get-started">Get Started</a>
+            <a href="#about" class="btn-get-started">{% trans "Get Started" %}</a>
             <a href="https://youtu.be/JzWbu371MuI?si=MRLR5skmAF6Yc1HY" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
             </div>
         </div>
@@ -31,8 +31,8 @@
 
 <!-- Section Title -->
 <div class="container section-title" data-aos="fade-up">
-    <h2>Donate</h2>
-    <p><span>Want to Help?</span> <span class="description-title">Donate Now</span></p>
+    <h2>{% trans "Donate" %}</h2>
+    <p><span>{% trans "Want to Help?" %}</span> <span class="description-title">{% trans "Donate Now" %}</span></p>
 </div><!-- End Section Title -->
 
 <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -52,11 +52,11 @@
         
 
             <div class="col-md-12 text-center">
-            <div class="loading">Loading</div>
+            <div class="loading">{% trans "Loading" %}</div>
             <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
+            <div class="sent-message">{% trans "Your message has been sent. Thank you!" %}</div>
 
-            <button type="submit">Send Message</button>
+            <button type="submit">{% trans "Send Message" %}</button>
             </div>
 
         </div>
