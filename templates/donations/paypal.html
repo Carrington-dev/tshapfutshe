@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 <!--  -->
 {% load static %}
+{% load i18n %}
+
 <!--  -->
 <!--  -->
 {% block cstags %}
@@ -251,8 +253,8 @@
   
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>PayPal</h2>
-    <p><span>Pay Now </span> <span class="description-title">PayPal</span></p>
+    <h2>{% trans "PayPal" %}</h2>
+    <p><span>{% trans "Pay Now" %} </span> <span class="description-title">{% trans "PayPal" %}</span></p>
   </div><!-- End Section Title -->
 
  
@@ -261,7 +263,7 @@
 
     <div class="row gy-3 text-center">
       <div class="col-md-12 text-center" data-aos="fade-up" data-aos-delay="200">
-          <h4><sup>{{ order.currency }}</sup>{{ order.order_total }}<span> / Once off</span></h4>
+          <h4><sup>{{ order.currency }}</sup>{{ order.order_total }}<span> / {% trans "Once off" %}</span></h4>
           <div style="display: flex; justify-content: center;">
             
           <div id="paypal-button-container" class="text-center"></div> 

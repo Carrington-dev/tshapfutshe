@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 08:08+0200\n"
+"POT-Creation-Date: 2025-05-09 08:10+0200\n"
 "PO-Revision-Date: 2025-05-09 08:07+0000\n"
 "Last-Translator: Carrington Muleya <crn96m@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -308,7 +308,7 @@ msgstr "Rumelani mulaedza"
 msgid "PayFast"
 msgstr ""
 
-#: .\templates\donations\payfast.html:13
+#: .\templates\donations\payfast.html:13 .\templates\donations\paypal.html:258
 msgid "Pay Now"
 msgstr "Badela Zwino"
 
@@ -347,6 +347,10 @@ msgstr "Visa / Masterkhadi"
 #: .\templates\donations\payfast.html:32
 msgid "Trackable Goals"
 msgstr "Zwipikwa zwi Tevheleaho"
+
+#: .\templates\donations\paypal.html:257 .\templates\donations\paypal.html:258
+msgid "PayPal"
+msgstr ""
 
 #: .\templates\security\about.html:14
 msgid "Our"
