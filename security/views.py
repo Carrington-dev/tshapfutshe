@@ -14,31 +14,60 @@ from tshaweb import settings
 
 
 def index(request):
-    return render(request, 'security/index.html')
+    context = dict()
+    context['title'] = _('Home of Faith')
+    return render(request, 'security/index.html', context)
 
 def about(request):
-    return render(request, 'security/about.html')
+    context = dict()
+    context['title'] = _("About Us")
+    return render(request, 'security/about.html', context)
 
 def contact(request):
-    return render(request, 'security/contact.html')
+    context = dict()
+    context['title'] = _('Contact Us')
+    if request.method == 'POST':
+        # Handle the contact form submission here
+        # You can use Django's forms or just process the data directly
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        message = request.POST.get('message')
+        
+        # Here you can send an email or save the message to the database
+        
+        messages.success(request, _('Thank you for contacting us! We will get back to you soon.'))
+        return redirect('contact')  # Redirect to the same page or another page after submission
+    return render(request, 'security/contact.html', context)
 
 def services(request):
-    return render(request, 'security/services.html')
+    context = dict()
+    context['title'] = _('Services')
+    return render(request, 'security/services.html', context)
 
 def testimonials(request):
-    return render(request, 'security/testimonials.html')
+    context = dict()
+    context['title'] = _('Testimonials')
+    return render(request, 'security/testimonials.html', context)
 
 def policy(request):
-    return render(request, 'security/policy.html')
+    context = dict()
+    context['title'] = _('Privacy Policy')
+    return render(request, 'security/policy.html', context)
 
 def terms(request):
-    return render(request, 'security/terms.html')
+    context = dict()
+    context['title'] = _('Terms and Conditions')
+    return render(request, 'security/terms.html', context)
 
 def faqs(request):
-    return render(request, 'security/faqs.html')
+    context = dict()
+    context['title'] = _('FAQs')
+    return render(request, 'security/faqs.html', context)
 
 def portfolio(request):
-    return render(request, 'security/portfolio.html')
+    context = dict()
+    context['title'] = _('Portfolio')
+    return render(request, 'security/portfolio.html', context)
 
 # Add more views as needed for departments
 
@@ -78,6 +107,7 @@ def music(request):
 # Add more views as needed for other donations or departments
 def donations(request):
     context = dict()
+    context['title'] = _('Donations')
     return render(request, 'donations/donations.html', context)
 
 def donate(request):
@@ -117,6 +147,8 @@ def payfast(request, pk):
     
     context['htmlForm'] = get_data_validate(request, order.order_number, (round( Decimal(order.order_total) * Decimal(18.5))), order.pk)
     context['order'] = order
+    context['title'] = _('PayFast Payment')
+    context['PAYFAST_MERCHANT_ID'] = settings.PAYFAST_MERCHANT_ID
     return render(request, 'donations/payfast.html', context)
 
 def paypal(request, pk):
@@ -124,18 +156,23 @@ def paypal(request, pk):
     context = dict()
     context['htmlForm'] = get_data_validate(request, order.order_number, order.order_total, order.pk)
     context['order'] = order
-    context['title'] = "PayPal Payment"
+    context['title'] = _('PayPal Payment')
+    context['PAYPAL_CLIENT_ID'] = settings.PAYPAL_CLIENT_ID
     return render(request, 'donations/paypal.html', context)
 
 def payment_done(request, pk):
     order = get_object_or_404(Order, pk=pk)
     context = dict()
     context['order'] = order
-    context['title'] = "PayPal Payment"
+    context['title'] = _('Payment Done')
+    context['message'] = _('Thank you for your donation! Your payment has been successfully processed.')
     return render(request, 'donations/payment_done.html', context)
 
 def payment_canceled(request, pk):
-    return render(request, 'donations/payment_canceled.html')
+    context = dict()
+    context['title'] = _('Payment Canceled')
+    context['message'] = _('Your payment has been canceled. If you have any questions, please contact us.')
+    return render(request, 'donations/payment_canceled.html', context)
 
 def before(request, pk):
     order = get_object_or_404(Order, pk=pk)

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 08:10+0200\n"
+"POT-Creation-Date: 2025-05-09 08:18+0200\n"
 "PO-Revision-Date: 2025-05-09 08:07+0000\n"
 "Last-Translator: Carrington Muleya <crn96m@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "Tshapfutshe SDA Church"
 msgstr "Tshapfutshe SDA Church"
 
-#: .\security\context_processor.py:18
+#: .\security\context_processor.py:18 .\security\views.py:18
 msgid "Home of Faith"
 msgstr "Hayani ha Lutendo"
 
@@ -79,11 +79,87 @@ msgstr "Khoudu ya Poswo"
 msgid "Short Description"
 msgstr "Ṱhalutshedzo pfufhi"
 
-#: .\security\views.py:108
+#: .\security\views.py:23 .\templates\security\about.html:84
+#: .\templates\security\index.html:83
+msgid "About Us"
+msgstr "Nga ha Rine"
+
+#: .\security\views.py:28 .\templates\security\contact.html:12
+msgid "Contact Us"
+msgstr "Kha vha ri kwame"
+
+#: .\security\views.py:38
+msgid "Thank you for contacting us! We will get back to you soon."
+msgstr ""
+
+#: .\security\views.py:44 .\templates\base.html:71
+#: .\templates\security\services.html:27 .\templates\security\services.html:28
+msgid "Services"
+msgstr "Tshumelo"
+
+#: .\security\views.py:49
+msgid "Testimonials"
+msgstr ""
+
+#: .\security\views.py:54
+msgid "Privacy Policy"
+msgstr ""
+
+#: .\security\views.py:59
+msgid "Terms and Conditions"
+msgstr ""
+
+#: .\security\views.py:64
+msgid "FAQs"
+msgstr ""
+
+#: .\security\views.py:69 .\templates\base.html:87
+#: .\templates\security\portfolio.html:14
+#: .\templates\security\portfolio.html:15
+msgid "Portfolio"
+msgstr "Phothifoḽio"
+
+#: .\security\views.py:110
+#, fuzzy
+#| msgid "Donate"
+msgid "Donations"
+msgstr "Ṋea"
+
+#: .\security\views.py:138
 msgid "There was an error with your submission. Please try again."
 msgstr ""
 "Ho vha na vhukhakhi kha zwe vha rumela. Ndi khou humbela uri ni lingedze "
 "hafhu."
+
+#: .\security\views.py:150
+msgid "PayFast Payment"
+msgstr ""
+
+#: .\security\views.py:159
+msgid "PayPal Payment"
+msgstr ""
+
+#: .\security\views.py:167
+#, fuzzy
+#| msgid "Payment Method"
+msgid "Payment Done"
+msgstr "Nḓila ya mbadelo"
+
+#: .\security\views.py:168
+msgid ""
+"Thank you for your donation! Your payment has been successfully processed."
+msgstr ""
+
+#: .\security\views.py:173
+#, fuzzy
+#| msgid "Payment Method"
+msgid "Payment Canceled"
+msgstr "Nḓila ya mbadelo"
+
+#: .\security\views.py:174
+msgid ""
+"Your payment has been canceled. If you have any questions, please contact us."
+msgstr ""
 
 #: .\templates\base.html:69 .\templates\security\services.html:15
 #: .\venv\Lib\site-packages\grappelli\dashboard\templates\admin\index.html:25
@@ -127,11 +203,6 @@ msgstr "Hayani"
 #: .\templates\security\index.html:82
 msgid "About"
 msgstr "Rine"
-
-#: .\templates\base.html:71 .\templates\security\services.html:27
-#: .\templates\security\services.html:28
-msgid "Services"
-msgstr "Tshumelo"
 
 #: .\templates\base.html:72
 msgid "Ministries"
@@ -180,11 +251,6 @@ msgstr "Thabelo"
 #: .\templates\base.html:84
 msgid "Music"
 msgstr "Muzika"
-
-#: .\templates\base.html:87 .\templates\security\portfolio.html:14
-#: .\templates\security\portfolio.html:15
-msgid "Portfolio"
-msgstr "Phothifoḽio"
 
 #: .\templates\base.html:89 .\templates\security\contact.html:11
 msgid "Contact"
@@ -320,7 +386,7 @@ msgstr "Ṋeani, na inwi ni ḓo fhiwa."
 msgid "Luke 6:38"
 msgstr "Luka 6:38 "
 
-#: .\templates\donations\payfast.html:25
+#: .\templates\donations\payfast.html:25 .\templates\donations\paypal.html:267
 msgid "Once off"
 msgstr "Luthihi"
 
@@ -434,10 +500,6 @@ msgstr ""
 #: .\templates\security\about.html:84 .\templates\security\index.html:83
 msgid "Find Out More"
 msgstr "Kha vha wane zwinzhi"
-
-#: .\templates\security\about.html:84 .\templates\security\index.html:83
-msgid "About Us"
-msgstr "Nga ha Rine"
 
 #: .\templates\security\about.html:97 .\templates\security\index.html:96
 msgid "Welcome to Tshafutshe SDA Church  Educational Ministry"
@@ -564,10 +626,6 @@ msgstr "Mirado ya Bodo"
 #: .\templates\security\contact.html:12
 msgid "Need Help?"
 msgstr "Ni Ṱoḓa Thuso?"
-
-#: .\templates\security\contact.html:12
-msgid "Contact Us"
-msgstr "Kha vha ri kwame"
 
 #: .\templates\security\contact.html:25
 msgid "Address"
