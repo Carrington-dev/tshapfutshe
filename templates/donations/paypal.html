@@ -247,6 +247,9 @@
       </script>
 {% endblock cstags %}
 <!--  -->
+{% block title %}{% if title %}{{title}}{% else %}{{ company }}{% endif %}{% endblock %}
+
+<!--  -->
 {% block content %}
 <!-- Pricing Section -->
 <section id="pricing" class="pricing section">
