@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 07:53+0200\n"
-"PO-Revision-Date: 2025-05-09 07:54+0000\n"
+"POT-Creation-Date: 2025-05-09 07:56+0200\n"
+"PO-Revision-Date: 2025-05-09 07:58+0000\n"
 "Last-Translator: Carrington Muleya <crn96m@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -227,6 +227,10 @@ msgstr "Madavhi"
 msgid "Our Partners"
 msgstr "Vhashumisani vhashu"
 
+#: .\templates\base.html:181
+msgid "Follow Us"
+msgstr "Ri tevheleni"
+
 #: .\templates\base.html:183
 msgid ""
 "Stay spiritually connected with Tshafutshe SDA Church. Be the first to know "
@@ -242,6 +246,14 @@ msgstr ""
 "lufuno, na ndivho. Phaṱhutshedzo yaṋu i tevhelaho, mulaedza, kana tshifhinga"
 " tsha u ṱuṱuwedzwa zwi tou vha kule nga u tou ṋanga luthihi. Ri tevheleni "
 "kha social media ni tshimbile na rine kha holu lwendo lwa lutendo"
+
+#: .\templates\base.html:197
+msgid "Copyright"
+msgstr "Pfanelo"
+
+#: .\templates\base.html:197
+msgid "All Rights Reserved"
+msgstr "Pfanelo dzoṱhe dzo vhulungea"
 
 #: .\templates\donations\donate.html:14
 msgid "His"
